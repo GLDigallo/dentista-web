@@ -19,186 +19,180 @@
 
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <a href="index.html" class="navbar__brand">
-        <span class="navbar__logo">ODONTO</span><span class="navbar__logo--gold">PREMIUM</span>
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">OD</span>
+        <span>ONTO <strong style="color:var(--gold)">PREMIUM</strong></span>
       </a>
-      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+      <button class="hamburger" id="navToggle" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
-      <ul class="navbar__links" id="navLinks">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="servicios.html" class="active">Servicios</a></li>
         <li><a href="galeria.html">Trabajos</a></li>
-        <li><a href="contacto.html" class="btn btn--gold btn--nav">Reservar Turno</a></li>
+        <li><a href="contacto.html" class="nav-cta">Reservar Turno</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Page Header -->
-  <header class="page-header">
+  <!-- Hero -->
+  <header class="hero" style="min-height:50vh">
     <div class="container">
-      <span class="page-header__tag fade-in">Nuestros Servicios</span>
-      <h1 class="page-header__title fade-in">Tratamientos <span class="text-gold">Premium</span></h1>
-      <p class="page-header__desc fade-in">Cada tratamiento es diseñado para brindarte resultados excepcionales con la máxima comodidad y seguridad.</p>
+      <div class="hero-content" style="grid-column:1/-1;text-align:center">
+        <h1 class="fade-in">
+          Tratamientos <span class="highlight">Premium</span>
+        </h1>
+        <p class="fade-in" style="max-width:640px;margin:0 auto">
+          Cada tratamiento es diseñado para brindarte resultados excepcionales con la máxima comodidad y seguridad.
+        </p>
+      </div>
     </div>
   </header>
 
-  <!-- Services Detail -->
+  <!-- Services -->
   <section class="section">
     <div class="container">
+      <div class="servicios-grid">
 
-      <!-- Service 1 -->
-      <div class="service-detail fade-in" id="blanqueamiento">
-        <div class="service-detail__image">
-          <div class="service-detail__placeholder">🦷</div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__number text-gold">01</span>
-          <h2 class="service-detail__title">Blanqueamiento Dental</h2>
-          <p class="service-detail__text">Nuestro blanqueamiento profesional utiliza tecnología LED de última generación para lograr una sonrisa hasta 8 tonos más clara en una sola sesión. El tratamiento es seguro, indoloro y los resultados son inmediatos.</p>
-          <ul class="service-detail__list">
-            <li><span class="text-gold">✓</span> Resultados desde la primera sesión</li>
-            <li><span class="text-gold">✓</span> Tecnología LED avanzada</li>
-            <li><span class="text-gold">✓</span> Fórmula segura para el esmalte</li>
-            <li><span class="text-gold">✓</span> Duración de 1 a 2 horas</li>
+        <div class="servicio-card fade-in" id="blanqueamiento">
+          <div class="servicio-icon">🦷</div>
+          <h3>Blanqueamiento Dental</h3>
+          <p>Nuestro blanqueamiento profesional utiliza tecnología LED de última generación para lograr una sonrisa hasta 8 tonos más clara en una sola sesión. El tratamiento es seguro, indoloro y los resultados son inmediatos.</p>
+          <ul style="list-style:none;margin-bottom:24px">
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Resultados desde la primera sesión
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Tecnología LED avanzada
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Fórmula segura para el esmalte
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Duración de 1 a 2 horas
+            </li>
           </ul>
-          <div class="service-detail__price">
-            <span class="service-detail__price-label">Precio</span>
-            <span class="service-detail__price-value text-gold">Desde $45.000</span>
-          </div>
-          <a href="contacto.html" class="btn btn--gold">Reservar Turno</a>
+          <span class="servicio-precio">Desde $45.000</span>
         </div>
-      </div>
 
-      <!-- Service 2 -->
-      <div class="service-detail service-detail--reverse fade-in" id="implantes">
-        <div class="service-detail__image">
-          <div class="service-detail__placeholder">⚕️</div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__number text-gold">02</span>
-          <h2 class="service-detail__title">Implantes Dentales</h2>
-          <p class="service-detail__text">Los implantes de titanio de alta pureza se integran de forma natural con el hueso, proporcionando una base permanente y estable para tus prótesis dentales. Diseño digital para una colocación precisa.</p>
-          <ul class="service-detail__list">
-            <li><span class="text-gold">✓</span> Titanio de alta pureza biocompatible</li>
-            <li><span class="text-gold">✓</span> Cirugía guiada por computadora</li>
-            <li><span class="text-gold">✓</span> Recuperación rápida</li>
-            <li><span class="text-gold">✓</span> Garantía de por vida</li>
+        <div class="servicio-card fade-in" id="implantes">
+          <div class="servicio-icon">⚕️</div>
+          <h3>Implantes Dentales</h3>
+          <p>Los implantes de titanio de alta pureza se integran de forma natural con el hueso, proporcionando una base permanente y estable para tus prótesis dentales. Diseño digital para una colocación precisa.</p>
+          <ul style="list-style:none;margin-bottom:24px">
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Titanio de alta pureza biocompatible
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Cirugía guiada por computadora
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Recuperación rápida
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Garantía de por vida
+            </li>
           </ul>
-          <div class="service-detail__price">
-            <span class="service-detail__price-label">Precio</span>
-            <span class="service-detail__price-value text-gold">Desde $280.000</span>
-          </div>
-          <a href="contacto.html" class="btn btn--gold">Reservar Turno</a>
+          <span class="servicio-precio">Desde $280.000</span>
         </div>
-      </div>
 
-      <!-- Service 3 -->
-      <div class="service-detail fade-in" id="carillas">
-        <div class="service-detail__image">
-          <div class="service-detail__placeholder">✨</div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__number text-gold">03</span>
-          <h2 class="service-detail__title">Carillas Dentales</h2>
-          <p class="service-detail__text">Las carillas de porcelana ultra delgadas se adhieren a la superficie del diente, corrigiendo forma, color y alineación. Diseñadas digitalmente para un resultado natural y armónico.</p>
-          <ul class="service-detail__list">
-            <li><span class="text-gold">✓</span> Porcelana de alta estética</li>
-            <li><span class="text-gold">✓</span> Diseño digital personalizado</li>
-            <li><span class="text-gold">✓</span> Mínima preparación del diente</li>
-            <li><span class="text-gold">✓</span> Resultados naturales y duraderos</li>
+        <div class="servicio-card fade-in" id="carillas">
+          <div class="servicio-icon">✨</div>
+          <h3>Carillas Dentales</h3>
+          <p>Las carillas de porcelana ultra delgadas se adhieren a la superficie del diente, corrigiendo forma, color y alineación. Diseñadas digitalmente para un resultado natural y armónico.</p>
+          <ul style="list-style:none;margin-bottom:24px">
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Porcelana de alta estética
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Diseño digital personalizado
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Mínima preparación del diente
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Resultados naturales y duraderos
+            </li>
           </ul>
-          <div class="service-detail__price">
-            <span class="service-detail__price-label">Precio</span>
-            <span class="service-detail__price-value text-gold">Desde $65.000</span>
-          </div>
-          <a href="contacto.html" class="btn btn--gold">Reservar Turno</a>
+          <span class="servicio-precio">Desde $65.000</span>
         </div>
-      </div>
 
-      <!-- Service 4 -->
-      <div class="service-detail service-detail--reverse fade-in" id="ortodoncia">
-        <div class="service-detail__image">
-          <div class="service-detail__placeholder">🔧</div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__number text-gold">04</span>
-          <h2 class="service-detail__title">Ortodoncia Invisible</h2>
-          <p class="service-detail__text">Sistema de alineadores transparentes personalizados que corrigen la posición de tus dientes de forma cómoda y casi invisible. Control digital del progreso para resultados predecibles.</p>
-          <ul class="service-detail__list">
-            <li><span class="text-gold">✓</span> Alineadores transparentes y removibles</li>
-            <li><span class="text-gold">✓</span> Comodidad sin brackets</li>
-            <li><span class="text-gold">✓</span> Resultados predecibles con IA</li>
-            <li><span class="text-gold">✓</span> Control de progreso digital</li>
+        <div class="servicio-card fade-in" id="ortodoncia">
+          <div class="servicio-icon">🔧</div>
+          <h3>Ortodoncia Invisible</h3>
+          <p>Sistema de alineadores transparentes personalizados que corrigen la posición de tus dientes de forma cómoda y casi invisible. Control digital del progreso para resultados predecibles.</p>
+          <ul style="list-style:none;margin-bottom:24px">
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Alineadores transparentes y removibles
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Comodidad sin brackets
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Resultados predecibles con IA
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Control de progreso digital
+            </li>
           </ul>
-          <div class="service-detail__price">
-            <span class="service-detail__price-label">Precio</span>
-            <span class="service-detail__price-value text-gold">Desde $450.000</span>
-          </div>
-          <a href="contacto.html" class="btn btn--gold">Reservar Turno</a>
+          <span class="servicio-precio">Desde $450.000</span>
         </div>
-      </div>
 
-      <!-- Service 5 -->
-      <div class="service-detail fade-in" id="estetica">
-        <div class="service-detail__image">
-          <div class="service-detail__placeholder">💎</div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__number text-gold">05</span>
-          <h2 class="service-detail__title">Estética Dental</h2>
-          <p class="service-detail__text">Diseño digital de sonrisa personalizado. Analizamos tus facciones, perfil labial y.proporciones faciales para crear una sonrisa que armonice perfectamente con tu rostro.</p>
-          <ul class="service-detail__list">
-            <li><span class="text-gold">✓</span> Diseño digital de sonrisa (DSD)</li>
-            <li><span class="text-gold">✓</span> Simulación previa al tratamiento</li>
-            <li><span class="text-gold">✓</span> Armonización facial completa</li>
-            <li><span class="text-gold">✓</span> Resultados personalizados</li>
+        <div class="servicio-card fade-in" id="estetica">
+          <div class="servicio-icon">💎</div>
+          <h3>Estética Dental</h3>
+          <p>Diseño digital de sonrisa personalizado. Analizamos tus facciones, perfil labial y proporciones faciales para crear una sonrisa que armonice perfectamente con tu rostro.</p>
+          <ul style="list-style:none;margin-bottom:24px">
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Diseño digital de sonrisa (DSD)
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Simulación previa al tratamiento
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Armonización facial completa
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Resultados personalizados
+            </li>
           </ul>
-          <div class="service-detail__price">
-            <span class="service-detail__price-label">Precio</span>
-            <span class="service-detail__price-value text-gold">Desde $80.000</span>
-          </div>
-          <a href="contacto.html" class="btn btn--gold">Reservar Turno</a>
+          <span class="servicio-precio">Desde $80.000</span>
         </div>
-      </div>
 
-      <!-- Service 6 -->
-      <div class="service-detail service-detail--reverse fade-in" id="prevencion">
-        <div class="service-detail__image">
-          <div class="service-detail__placeholder">🛡️</div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__number text-gold">06</span>
-          <h2 class="service-detail__title">Prevención Integral</h2>
-          <p class="service-detail__text">Plan preventivo personalizado con limpieza profesional, diagnóstico digital por rayos X de baja dosis y seguimiento continuo para mantener tu salud bucal en óptimas condiciones.</p>
-          <ul class="service-detail__list">
-            <li><span class="text-gold">✓</span> Limpieza y profilaxis profesional</li>
-            <li><span class="text-gold">✓</span> Diagnóstico digital sin radiación</li>
-            <li><span class="text-gold">✓</span> Plan preventivo personalizado</li>
-            <li><span class="text-gold">✓</span> Seguimiento y control periódico</li>
+        <div class="servicio-card fade-in" id="prevencion">
+          <div class="servicio-icon">🛡️</div>
+          <h3>Prevención Integral</h3>
+          <p>Plan preventivo personalizado con limpieza profesional, diagnóstico digital por rayos X de baja dosis y seguimiento continuo para mantener tu salud bucal en óptimas condiciones.</p>
+          <ul style="list-style:none;margin-bottom:24px">
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Limpieza y profilaxis profesional
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Diagnóstico digital sin radiación
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Plan preventivo personalizado
+            </li>
+            <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
+              <span style="color:var(--gold)">✓</span> Seguimiento y control periódico
+            </li>
           </ul>
-          <div class="service-detail__price">
-            <span class="service-detail__price-label">Precio</span>
-            <span class="service-detail__price-value text-gold">Desde $12.000</span>
-          </div>
-          <a href="contacto.html" class="btn btn--gold">Reservar Turno</a>
+          <span class="servicio-precio">Desde $12.000</span>
         </div>
-      </div>
 
+      </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="section cta">
+  <section class="cta-section">
     <div class="container">
-      <div class="cta__inner fade-in">
-        <h2 class="cta__title">¿Tenés dudas sobre algún <span class="text-gold">tratamiento</span>?</h2>
-        <p class="cta__text">Contactanos y te asesoramos sin compromiso sobre la mejor opción para vos.</p>
-        <div class="cta__actions">
-          <a href="contacto.html" class="btn btn--gold btn--lg">Consultar Ahora</a>
-          <a href="https://wa.me/543791234567" target="_blank" rel="noopener" class="btn btn--outline btn--lg">WhatsApp</a>
-        </div>
+      <h2 class="fade-in">¿Tenés dudas sobre algún <span class="highlight">tratamiento</span>?</h2>
+      <p class="fade-in">Contactanos y te asesoramos sin compromiso sobre la mejor opción para vos.</p>
+      <div class="cta-buttons fade-in">
+        <a href="contacto.html" class="btn btn-primary">Consultar Ahora</a>
+        <a href="https://wa.me/543791234567" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp</a>
       </div>
     </div>
   </section>
@@ -206,41 +200,55 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
-        <div class="footer__col">
-          <a href="index.html" class="footer__brand">
-            <span class="navbar__logo">ODONTO</span><span class="navbar__logo--gold">PREMIUM</span>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon">OD</span>
+            <span>ONTO <strong style="color:var(--gold)">PREMIUM</strong></span>
           </a>
-          <p class="footer__desc">Odontología de excelencia con tecnología de vanguardia y atención personalizada.</p>
+          <p>Odontología de excelencia con tecnología de vanguardia y atención personalizada.</p>
         </div>
-        <div class="footer__col">
-          <h4 class="footer__heading">Navegación</h4>
-          <ul class="footer__links">
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="servicios.html">Servicios</a></li>
             <li><a href="galeria.html">Trabajos</a></li>
             <li><a href="contacto.html">Reservar Turno</a></li>
           </ul>
         </div>
-        <div class="footer__col">
-          <h4 class="footer__heading">Contacto</h4>
-          <ul class="footer__links">
-            <li><span>📍</span> Av. Principal 1234, Corrientes</li>
-            <li><span>📞</span> +54 379 123-4567</li>
-            <li><span>✉️</span> info@odontopremium.com.ar</li>
-            <li><span>🕐</span> Lun-Vie: 9:00 - 18:00</li>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+543791234567">📞 +54 379 123-4567</a></li>
+            <li><a href="mailto:info@odontopremium.com.ar">✉️ info@odontopremium.com.ar</a></li>
+            <li>📍 Av. Principal 1234, Corrientes</li>
+            <li>🕐 Lun-Vie: 9:00 - 18:00</li>
           </ul>
         </div>
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <ul>
+            <li>Lun - Vie: 9:00 - 18:00</li>
+            <li>Sáb: 9:00 - 13:00</li>
+            <li>Dom: Cerrado</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
       </div>
-      <div class="footer__bottom">
+      <div class="footer-bottom">
         <p>&copy; 2026 Odonto Premium. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/543791234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-    <span>💬</span>
+  <a href="https://wa.me/543791234567" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    💬
   </a>
 
   <script src="js/main.js"></script>

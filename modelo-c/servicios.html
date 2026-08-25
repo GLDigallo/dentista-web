@@ -11,186 +11,175 @@
   <meta property="og:url" content="https://clinicadental.com/servicios.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
-    <div class="container navbar__container">
-      <a href="index.html" class="navbar__logo">
-        <span class="navbar__logo-icon">🦷</span>
-        <span class="navbar__logo-text">Dental<span>Flor</span></span>
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">🦷</span>
+        <span>Dental<span style="color:var(--primary)">Flor</span></span>
       </a>
-      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+      <button class="hamburger" id="navToggle" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
-      <ul class="navbar__menu" id="navMenu">
-        <li><a href="index.html" class="navbar__link">Inicio</a></li>
-        <li><a href="servicios.html" class="navbar__link active">Servicios</a></li>
-        <li><a href="galeria.html" class="navbar__link">Trabajos</a></li>
-        <li><a href="contacto.html" class="navbar__link navbar__link--cta">Reservar Turno</a></li>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="galeria.html">Trabajos</a></li>
+        <li><a href="contacto.html" class="nav-cta">Reservar Turno</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Page Header -->
-  <section class="page-header">
+  <section class="section" style="padding-top:140px; padding-bottom:60px;">
     <div class="container">
-      <h1 class="page-header__title fade-in">Nuestros <span class="text-green">Servicios</span></h1>
-      <p class="page-header__subtitle fade-in">Tratamientos odontológicos integrales con tecnología de vanguardia y un trato cálido y personalizado.</p>
+      <div class="section-header fade-in">
+        <div class="accent-line"></div>
+        <h2>Nuestros <span class="highlight">Servicios</span></h2>
+        <p>Tratamientos odontológicos integrales con tecnología de vanguardia y un trato cálido y personalizado.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Services Detail -->
-  <section class="services-detail">
+  <!-- Services Grid -->
+  <section class="section" style="padding-top:0;">
     <div class="container">
 
       <!-- Preventiva -->
-      <div class="service-detail fade-in" id="preventiva">
-        <div class="service-detail__visual">
-          <div class="service-detail__image-placeholder">
-            <span>🪥</span>
+      <div class="servicio-card fade-in" id="preventiva" style="margin-bottom:32px;">
+        <div style="display:grid; grid-template-columns:200px 1fr; gap:32px; align-items:center;">
+          <div class="servicio-icon" style="font-size:5rem; text-align:center;">🪥</div>
+          <div>
+            <span class="servicio-precio" style="margin-bottom:12px;">Odontología Preventiva</span>
+            <h3 style="font-size:1.5rem; margin-top:12px;">Limpieza y profilaxis dental</h3>
+            <p style="margin-top:12px;">La limpieza dental profesional es fundamental para prevenir enfermedades de las encías, caries y otros problemas bucales. Eliminamos la placa bacteriana y el sarro acumulado, dejando tus dientes limpios, brillantes y saludables.</p>
+            <ul class="sobre-list" style="margin-top:16px;">
+              <li><span class="check">✓</span> Eliminación de sarro y placa bacteriana</li>
+              <li><span class="check">✓</span> Pulido y alisado dental</li>
+              <li><span class="check">✓</span> Aplicación de flúor protector</li>
+              <li><span class="check">✓</span> Asesoramiento de higiene bucal personalizada</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary mt-4">Reservar Turno</a>
           </div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__category">Odontología Preventiva</span>
-          <h2 class="service-detail__title">Limpieza y profilaxis dental</h2>
-          <p class="service-detail__text">La limpieza dental profesional es fundamental para prevenir enfermedades de las encías, caries y otros problemas bucales. Eliminamos la placa bacteriana y el sarro acumulado, dejando tus dientes limpios, brillantes y saludables.</p>
-          <ul class="service-detail__list">
-            <li>✅ Eliminación de sarro y placa bacteriana</li>
-            <li>✅ Pulido y alisado dental</li>
-            <li>✅ Aplicación de flúor protector</li>
-            <li>✅ Asesoramiento de higiene bucal personalizada</li>
-          </ul>
-          <a href="contacto.html" class="btn btn--primary">Reservar Turno</a>
         </div>
       </div>
 
       <!-- Blanqueamiento -->
-      <div class="service-detail service-detail--reverse fade-in" id="blanqueamiento">
-        <div class="service-detail__visual">
-          <div class="service-detail__image-placeholder">
-            <span>✨</span>
+      <div class="servicio-card fade-in" id="blanqueamiento" style="margin-bottom:32px;">
+        <div style="display:grid; grid-template-columns:200px 1fr; gap:32px; align-items:center;">
+          <div class="servicio-icon" style="font-size:5rem; text-align:center;">✨</div>
+          <div>
+            <span class="servicio-precio" style="margin-bottom:12px;">Estética Dental</span>
+            <h3 style="font-size:1.5rem; margin-top:12px;">Blanqueamiento dental</h3>
+            <p style="margin-top:12px;">Recuperá el brillo natural de tu sonrisa con nuestro blanqueamiento dental profesional. Utilizamos técnicas seguras y de última generación que respetan la estructura del diente mientras eliminan manchas y decoloraciones.</p>
+            <ul class="sobre-list" style="margin-top:16px;">
+              <li><span class="check">✓</span> Resultados visibles desde la primera sesión</li>
+              <li><span class="check">✓</span> Tratamiento seguro y controlado</li>
+              <li><span class="check">✓</span> Fórmulas que respetan el esmalte dental</li>
+              <li><span class="check">✓</span> Duración prolongada con cuidados simples</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary mt-4">Reservar Turno</a>
           </div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__category">Estética Dental</span>
-          <h2 class="service-detail__title">Blanqueamiento dental</h2>
-          <p class="service-detail__text">Recuperá el brillo natural de tu sonrisa con nuestro blanqueamiento dental profesional. Utilizamos técnicas seguras y de última generación que respetan la estructura del diente mientras eliminan manchas y decoloraciones.</p>
-          <ul class="service-detail__list">
-            <li>✅ Resultados visibles desde la primera sesión</li>
-            <li>✅ Tratamiento seguro y controlado</li>
-            <li>✅ Fórmulas que respetan el esmalte dental</li>
-            <li>✅ Duración prolongada con cuidados simples</li>
-          </ul>
-          <a href="contacto.html" class="btn btn--primary">Reservar Turno</a>
         </div>
       </div>
 
       <!-- Implantes -->
-      <div class="service-detail fade-in" id="implantes">
-        <div class="service-detail__visual">
-          <div class="service-detail__image-placeholder">
-            <span>🦷</span>
+      <div class="servicio-card fade-in" id="implantes" style="margin-bottom:32px;">
+        <div style="display:grid; grid-template-columns:200px 1fr; gap:32px; align-items:center;">
+          <div class="servicio-icon" style="font-size:5rem; text-align:center;">🦷</div>
+          <div>
+            <span class="servicio-precio" style="margin-bottom:12px;">Implantología</span>
+            <h3 style="font-size:1.5rem; margin-top:12px;">Implantes dentales</h3>
+            <p style="margin-top:12px;">Los implantes dentales son la solución más avanzada para reemplazar dientes perdidos. Son de titanio de alta calidad, se integran de forma natural con el hueso y funcionan exactamente como un diente natural.</p>
+            <ul class="sobre-list" style="margin-top:16px;">
+              <li><span class="check">✓</span> Implantología guiada por computadora</li>
+              <li><span class="check">✓</span> Materiales de primera calidad</li>
+              <li><span class="check">✓</span> Resultados estéticos y funcionales</li>
+              <li><span class="check">✓</span> Seguimiento post-operatorio personalizado</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary mt-4">Reservar Turno</a>
           </div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__category">Implantología</span>
-          <h2 class="service-detail__title">Implantes dentales</h2>
-          <p class="service-detail__text">Los implantes dentales son la solución más avanzada para reemplazar dientes perdidos. Son Titanio de alta calidad, se integran de forma natural con el hueso y funcionan exactamente como un diente natural.</p>
-          <ul class="service-detail__list">
-            <li>✅ Implantología guiada por computadora</li>
-            <li>✅ Materiales de primera calidad</li>
-            <li>✅ Resultados estéticos y funcionales</li>
-            <li>✅ Seguimiento post-operatorio personalizado</li>
-          </ul>
-          <a href="contacto.html" class="btn btn--primary">Reservar Turno</a>
         </div>
       </div>
 
       <!-- Ortodoncia -->
-      <div class="service-detail service-detail--reverse fade-in" id="ortodoncia">
-        <div class="service-detail__visual">
-          <div class="service-detail__image-placeholder">
-            <span>👩‍⚕️</span>
+      <div class="servicio-card fade-in" id="ortodoncia" style="margin-bottom:32px;">
+        <div style="display:grid; grid-template-columns:200px 1fr; gap:32px; align-items:center;">
+          <div class="servicio-icon" style="font-size:5rem; text-align:center;">👩‍⚕️</div>
+          <div>
+            <span class="servicio-precio" style="margin-bottom:12px;">Ortodoncia</span>
+            <h3 style="font-size:1.5rem; margin-top:12px;">Ortodoncia y alineación dental</h3>
+            <p style="margin-top:12px;">Corregimos la posición de los dientes y la mordida a cualquier edad. Ofrecemos diversas opciones de tratamiento adaptadas a tus necesidades y estilo de vida.</p>
+            <ul class="sobre-list" style="margin-top:16px;">
+              <li><span class="check">✓</span> Brackets metálicos y cerámicos</li>
+              <li><span class="check">✓</span> Ortodoncia invisible (alineadores)</li>
+              <li><span class="check">✓</span> Ortodoncia infantil preventiva</li>
+              <li><span class="check">✓</span> Tratamientos personalizados</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary mt-4">Reservar Turno</a>
           </div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__category">Ortodoncia</span>
-          <h2 class="service-detail__title">Ortodoncia y alineación dental</h2>
-          <p class="service-detail__text">Corregimos la posición de los dientes y la mordida a cualquier edad. Ofrecemos diversas opciones de tratamiento adaptadas a tus necesidades y estilo de vida.</p>
-          <ul class="service-detail__list">
-            <li>✅ Brackets metálicos y cerámicos</li>
-            <li>✅ Ortodoncia invisible (alineadores)</li>
-            <li>✅ Ortodoncia infantil preventiva</li>
-            <li>✅ Tratamientos personalizados</li>
-          </ul>
-          <a href="contacto.html" class="btn btn--primary">Reservar Turno</a>
         </div>
       </div>
 
       <!-- Odontología Infantil -->
-      <div class="service-detail fade-in" id="infantil">
-        <div class="service-detail__visual">
-          <div class="service-detail__image-placeholder">
-            <span>👶</span>
+      <div class="servicio-card fade-in" id="infantil" style="margin-bottom:32px;">
+        <div style="display:grid; grid-template-columns:200px 1fr; gap:32px; align-items:center;">
+          <div class="servicio-icon" style="font-size:5rem; text-align:center;">👶</div>
+          <div>
+            <span class="servicio-precio" style="margin-bottom:12px;">Odontología Infantil</span>
+            <h3 style="font-size:1.5rem; margin-top:12px;">Dental para los más pequeños</h3>
+            <p style="margin-top:12px;">Sabemos que la primera experiencia dental es importante. Nuestro equipo tiene especial dedicación para que los niños se sientan cómodos, seguros y hasta divertidos durante su visita.</p>
+            <ul class="sobre-list" style="margin-top:16px;">
+              <li><span class="check">✓</span> Ambiente amigable y lúdico</li>
+              <li><span class="check">✓</span> Prevención y tratamientos adaptados</li>
+              <li><span class="check">✓</span> Educación sobre higiene bucal infantil</li>
+              <li><span class="check">✓</span> Cero miedo con paciencia y cariño</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary mt-4">Reservar Turno</a>
           </div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__category">Odontología Infantil</span>
-          <h2 class="service-detail__title">Dental para los más pequeños</h2>
-          <p class="service-detail__text">Sabemos que la primera experiencia dental es importante. Nuestro equipo tiene especial dedicación para que los niños se sientan cómodos, seguros y hasta divertidos durante su visita.</p>
-          <ul class="service-detail__list">
-            <li>✅ Ambiente amigable y lúdico</li>
-            <li>✅ Prevención y tratamientos adaptados</li>
-            <li>✅ Educación sobre higiene bucal infantil</li>
-            <li>✅ Cero miedo con paciencia y cariño</li>
-          </ul>
-          <a href="contacto.html" class="btn btn--primary">Reservar Turno</a>
         </div>
       </div>
 
       <!-- Endodoncia -->
-      <div class="service-detail service-detail--reverse fade-in" id="endodoncia">
-        <div class="service-detail__visual">
-          <div class="service-detail__image-placeholder">
-            <span>🔬</span>
+      <div class="servicio-card fade-in" id="endodoncia" style="margin-bottom:32px;">
+        <div style="display:grid; grid-template-columns:200px 1fr; gap:32px; align-items:center;">
+          <div class="servicio-icon" style="font-size:5rem; text-align:center;">🔬</div>
+          <div>
+            <span class="servicio-precio" style="margin-bottom:12px;">Endodoncia</span>
+            <h3 style="font-size:1.5rem; margin-top:12px;">Tratamiento de conductos</h3>
+            <p style="margin-top:12px;">La endodoncia permite salvar dientes que de otra forma tendrían que ser extraídos. Utilizamos tecnología avanzada para realizar el tratamiento de forma indolora y eficiente.</p>
+            <ul class="sobre-list" style="margin-top:16px;">
+              <li><span class="check">✓</span> Tratamiento indoloro con anestesia</li>
+              <li><span class="check">✓</span> Equipamiento de última generación</li>
+              <li><span class="check">✓</span> Diagnóstico preciso con radiografía</li>
+              <li><span class="check">✓</span> Recuperación rápida</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary mt-4">Reservar Turno</a>
           </div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__category">Endodoncia</span>
-          <h2 class="service-detail__title">Tratamiento de conductos</h2>
-          <p class="service-detail__text">La endodoncia permite salvar dientes que de otra forma tendrían que ser extraídos. Utilizamos tecnología avanzada para realizar el tratamiento de forma indolora y eficiente.</p>
-          <ul class="service-detail__list">
-            <li>✅ Tratamiento indoloro con anestesia</li>
-            <li>✅ Equipamiento de última generación</li>
-            <li>✅ Diagnóstico preciso con radiografía</li>
-            <li>✅ Recuperación rápida</li>
-          </ul>
-          <a href="contacto.html" class="btn btn--primary">Reservar Turno</a>
         </div>
       </div>
 
       <!-- Rehabilitación -->
-      <div class="service-detail fade-in" id="rehabilitacion">
-        <div class="service-detail__visual">
-          <div class="service-detail__image-placeholder">
-            <span>🏥</span>
+      <div class="servicio-card fade-in" id="rehabilitacion" style="margin-bottom:32px;">
+        <div style="display:grid; grid-template-columns:200px 1fr; gap:32px; align-items:center;">
+          <div class="servicio-icon" style="font-size:5rem; text-align:center;">🏥</div>
+          <div>
+            <span class="servicio-precio" style="margin-bottom:12px;">Rehabilitación Oral</span>
+            <h3 style="font-size:1.5rem; margin-top:12px;">Prótesis y rehabilitación</h3>
+            <p style="margin-top:12px;">Diseñamos y fabricamos prótesis dentales que restauran tanto la función masticatoria como la estética de tu sonrisa, con materiales de alta calidad y ajuste perfecto.</p>
+            <ul class="sobre-list" style="margin-top:16px;">
+              <li><span class="check">✓</span> Prótesis fijas y removibles</li>
+              <li><span class="check">✓</span> Coronas y puentes de cerámica</li>
+              <li><span class="check">✓</span> Diseño personalizado con tecnología digital</li>
+              <li><span class="check">✓</span> Ajuste preciso y cómodo</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary mt-4">Reservar Turno</a>
           </div>
-        </div>
-        <div class="service-detail__content">
-          <span class="service-detail__category">Rehabilitación Oral</span>
-          <h2 class="service-detail__title">Prótesis y rehabilitación</h2>
-          <p class="service-detail__text">Diseñamos y fabricamos prótesis dentales que restauran tanto la función masticatoria como la estética de tu sonrisa, con materiales de alta calidad y ajuste perfecto.</p>
-          <ul class="service-detail__list">
-            <li>✅ Prótesis fijas y removibles</li>
-            <li>✅ Coronas y puentes de cerámica</li>
-            <li>✅ Diseño personalizado con tecnología digital</li>
-            <li>✅ Ajuste preciso y cómodo</li>
-          </ul>
-          <a href="contacto.html" class="btn btn--primary">Reservar Turno</a>
         </div>
       </div>
 
@@ -198,57 +187,70 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta">
-    <div class="container cta__container">
-      <div class="cta__content fade-in">
-        <h2 class="cta__title">¿Tenés alguna consulta?</h2>
-        <p class="cta__text">Nuestro equipo está disponible para orientarte sobre el tratamiento más adecuado para vos.</p>
-        <div class="cta__actions">
-          <a href="contacto.html" class="btn btn--white">Reservar Turno</a>
-          <a href="https://wa.me/543791234567" class="btn btn--whatsapp" target="_blank" rel="noopener">💬 WhatsApp</a>
-        </div>
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="fade-in">¿Tenés alguna consulta?</h2>
+      <p class="fade-in">Nuestro equipo está disponible para orientarte sobre el tratamiento más adecuado para vos.</p>
+      <div class="cta-buttons fade-in">
+        <a href="contacto.html" class="btn btn-primary">Reservar Turno</a>
+        <a href="https://wa.me/543791234567" class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__col">
-        <a href="index.html" class="footer__logo">
-          <span class="navbar__logo-icon">🦷</span>
-          <span class="navbar__logo-text">Dental<span>Flor</span></span>
-        </a>
-        <p class="footer__desc">Clínica dental familiar dedicada a brindar sonrisas saludables con calidez, profesionalismo y los más altos estándares de calidad.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="color:var(--brown-200)">
+            <span class="logo-icon">🦷</span>
+            <span>Dental<span style="color:var(--primary-light)">Flor</span></span>
+          </a>
+          <p>Clínica dental familiar dedicada a brindar sonrisas saludables con calidez, profesionalismo y los más altos estándares de calidad.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Trabajos</a></li>
+            <li><a href="contacto.html">Reservar Turno</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html">Limpieza Dental</a></li>
+            <li><a href="servicios.html">Blanqueamiento</a></li>
+            <li><a href="servicios.html">Implantes</a></li>
+            <li><a href="servicios.html">Ortodoncia</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li>Calle Falsa 123, Ciudad</li>
+            <li>+54 379 123-4567</li>
+            <li>info@dentalflorentina.com</li>
+            <li>Lun-Vie: 9-18hs | Sáb: 9-13hs</li>
+          </ul>
+        </div>
       </div>
-      <div class="footer__col">
-        <h4 class="footer__heading">Enlaces</h4>
-        <ul class="footer__links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="galeria.html">Trabajos</a></li>
-          <li><a href="contacto.html">Reservar Turno</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__heading">Contacto</h4>
-        <ul class="footer__links">
-          <li>📍 Calle Falsa 123, Ciudad</li>
-          <li>📞 +54 379 123-4567</li>
-          <li>✉️ info@dentalflorentina.com</li>
-          <li>🕐 Lun-Vie: 9-18hs | Sáb: 9-13hs</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="container">
+      <div class="footer-bottom">
         <p>&copy; 2026 DentalFlor. Todos los derechos reservados.</p>
+        <p>Diseñado con 💚 para sonrisas más sanas</p>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/543791234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/543791234567" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
     💬
   </a>
 

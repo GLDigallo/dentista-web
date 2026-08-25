@@ -44,203 +44,215 @@
 
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <a href="index.html" class="navbar__brand">
-        <span class="navbar__logo">ODONTO</span><span class="navbar__logo--gold">PREMIUM</span>
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">OD</span>
+        <span>ONTO <strong style="color:var(--gold)">PREMIUM</strong></span>
       </a>
-      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+      <button class="hamburger" id="navToggle" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
-      <ul class="navbar__links" id="navLinks">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="galeria.html">Trabajos</a></li>
-        <li><a href="contacto.html" class="btn btn--gold btn--nav">Reservar Turno</a></li>
+        <li><a href="contacto.html" class="nav-cta">Reservar Turno</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero -->
   <header class="hero">
-    <div class="hero__bg"></div>
-    <div class="container hero__content">
-      <span class="hero__badge fade-in">Odontología de Excelencia</span>
-      <h1 class="hero__title fade-in">
-        Tu sonrisa es nuestra<br>
-        <span class="text-gold">pasión</span>
-      </h1>
-      <p class="hero__subtitle fade-in">
-        Tecnología de vanguardia, atención personalizada y resultados que transforman vidas.
-        Tu mejor versión comienza aquí.
-      </p>
-      <div class="hero__actions fade-in">
-        <a href="contacto.html" class="btn btn--gold btn--lg">Reservar Turno</a>
-        <a href="servicios.html" class="btn btn--outline btn--lg">Ver Servicios</a>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="fade-in">
+          Tu sonrisa es nuestra<br>
+          <span class="highlight">pasión</span>
+        </h1>
+        <p class="fade-in">
+          Tecnología de vanguardia, atención personalizada y resultados que transforman vidas.
+          Tu mejor versión comienza aquí.
+        </p>
+        <div class="hero-buttons fade-in">
+          <a href="contacto.html" class="btn btn-primary">Reservar Turno</a>
+          <a href="servicios.html" class="btn btn-secondary">Ver Servicios</a>
+          <a href="https://wa.me/543791234567" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp</a>
+        </div>
+        <div class="hero-stats fade-in">
+          <div class="stat">
+            <h3>15+</h3>
+            <p>Años de Experiencia</p>
+          </div>
+          <div class="stat">
+            <h3>3000+</h3>
+            <p>Sonrisas Transformadas</p>
+          </div>
+          <div class="stat">
+            <h3>4.9★</h3>
+            <p>Calificación Promedio</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual fade-in">
+        <div class="hero-image-card">
+          <div class="hero-image-placeholder">👨‍⚕️</div>
+        </div>
+        <div class="floating-badge top-right">
+          <div class="badge-icon">🦷</div>
+          <div class="badge-text">15+ Años</div>
+          <div class="badge-sub">de Experiencia</div>
+        </div>
+        <div class="floating-badge bottom-left">
+          <div class="badge-icon">⭐</div>
+          <div class="badge-text">4.9 Rating</div>
+          <div class="badge-sub">312 Reseñas</div>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Stats Bar -->
-  <section class="stats">
-    <div class="container">
-      <div class="stats__grid fade-in">
-        <div class="stats__item">
-          <span class="stats__number text-gold">15+</span>
-          <span class="stats__label">Años de Experiencia</span>
-        </div>
-        <div class="stats__divider"></div>
-        <div class="stats__item">
-          <span class="stats__number text-gold">3000+</span>
-          <span class="stats__label">Sonrisas Transformadas</span>
-        </div>
-        <div class="stats__divider"></div>
-        <div class="stats__item">
-          <span class="stats__number text-gold">4.9★</span>
-          <span class="stats__label">Calificación Promedio</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Trust Bar -->
-  <section class="trust">
+  <section class="trust-bar">
     <div class="container">
-      <div class="trust__grid fade-in">
-        <div class="trust__item">
-          <span class="trust__icon">🏥</span>
-          <span class="trust__text">Equipamiento de última generación</span>
-        </div>
-        <div class="trust__item">
-          <span class="trust__icon">👨‍⚕️</span>
-          <span class="trust__text">Profesionales certificados</span>
-        </div>
-        <div class="trust__item">
-          <span class="trust__icon">💳</span>
-          <span class="trust__text">Facilidades de pago</span>
-        </div>
-        <div class="trust__item">
-          <span class="trust__icon">🕐</span>
-          <span class="trust__text">Turnos flexibles</span>
-        </div>
+      <div class="trust-item fade-in">
+        <span class="trust-icon">🏥</span>
+        Equipamiento de última generación
+      </div>
+      <div class="trust-item fade-in">
+        <span class="trust-icon">👨‍⚕️</span>
+        Profesionales certificados
+      </div>
+      <div class="trust-item fade-in">
+        <span class="trust-icon">💳</span>
+        Facilidades de pago
+      </div>
+      <div class="trust-item fade-in">
+        <span class="trust-icon">🕐</span>
+        Turnos flexibles
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section class="section services" id="servicios">
+  <section class="section" id="servicios">
     <div class="container">
-      <div class="section__header fade-in">
-        <span class="section__tag">Nuestros Servicios</span>
-        <h2 class="section__title">Tratamientos <span class="text-gold">Premium</span></h2>
-        <p class="section__desc">Ofrecemos una amplia gama de tratamientos odontológicos con la más alta calidad y tecnología avanzada.</p>
+      <div class="section-header fade-in">
+        <div class="accent-line"></div>
+        <h2>Tratamientos <span class="highlight">Premium</span></h2>
+        <p>Ofrecemos una amplia gama de tratamientos odontológicos con la más alta calidad y tecnología avanzada.</p>
       </div>
-      <div class="services__grid" id="servicesGrid">
-        <div class="card card--dark fade-in">
-          <div class="card__icon">🦷</div>
-          <h3 class="card__title">Blanqueamiento Dental</h3>
-          <p class="card__text">Sonrisa radiante con nuestro blanqueamiento profesional de alta precisión. Resultados visibles desde la primera sesión.</p>
-          <span class="card__price text-gold">Desde $45.000</span>
+      <div class="servicios-grid">
+        <div class="servicio-card fade-in">
+          <div class="servicio-icon">🦷</div>
+          <h3>Blanqueamiento Dental</h3>
+          <p>Sonrisa radiante con nuestro blanqueamiento profesional de alta precisión. Resultados visibles desde la primera sesión.</p>
+          <span class="servicio-precio">Desde $45.000</span>
         </div>
-        <div class="card card--dark fade-in">
-          <div class="card__icon">⚕️</div>
-          <h3 class="card__title">Implantes Dentales</h3>
-          <p class="card__text">Recupera tu sonrisa con implantes de titanio de última generación. Integración ósea perfecta y durabilidad garantizada.</p>
-          <span class="card__price text-gold">Desde $280.000</span>
+        <div class="servicio-card fade-in">
+          <div class="servicio-icon">⚕️</div>
+          <h3>Implantes Dentales</h3>
+          <p>Recupera tu sonrisa con implantes de titanio de última generación. Integración ósea perfecta y durabilidad garantizada.</p>
+          <span class="servicio-precio">Desde $280.000</span>
         </div>
-        <div class="card card--dark fade-in">
-          <div class="card__icon">✨</div>
-          <h3 class="card__title">Carillas Dentales</h3>
-          <p class="card__text">Transforma tu sonrisa con carillas de porcelana ultra delgadas. Resultados naturales y estéticamente perfectos.</p>
-          <span class="card__price text-gold">Desde $65.000</span>
+        <div class="servicio-card fade-in">
+          <div class="servicio-icon">✨</div>
+          <h3>Carillas Dentales</h3>
+          <p>Transforma tu sonrisa con carillas de porcelana ultra delgadas. Resultados naturales y estéticamente perfectos.</p>
+          <span class="servicio-precio">Desde $65.000</span>
         </div>
-        <div class="card card--dark fade-in">
-          <div class="card__icon">🔧</div>
-          <h3 class="card__title">Ortodoncia Invisible</h3>
-          <p class="card__text">Alineadores transparentes para una sonrisa perfecta sin brackets. Cómodo, discreto y altamente efectivo.</p>
-          <span class="card__price text-gold">Desde $450.000</span>
+        <div class="servicio-card fade-in">
+          <div class="servicio-icon">🔧</div>
+          <h3>Ortodoncia Invisible</h3>
+          <p>Alineadores transparentes para una sonrisa perfecta sin brackets. Cómodo, discreto y altamente efectivo.</p>
+          <span class="servicio-precio">Desde $450.000</span>
         </div>
-        <div class="card card--dark fade-in">
-          <div class="card__icon">💎</div>
-          <h3 class="card__title">Estética Dental</h3>
-          <p class="card__text">Diseño digital de sonrisa personalizado. Armonizamos facciones para lograr tu sonrisa ideal.</p>
-          <span class="card__price text-gold">Desde $80.000</span>
+        <div class="servicio-card fade-in">
+          <div class="servicio-icon">💎</div>
+          <h3>Estética Dental</h3>
+          <p>Diseño digital de sonrisa personalizado. Armonizamos facciones para lograr tu sonrisa ideal.</p>
+          <span class="servicio-precio">Desde $80.000</span>
         </div>
-        <div class="card card--dark fade-in">
-          <div class="card__icon">🛡️</div>
-          <h3 class="card__title">PrevenCIÓN Integral</h3>
-          <p class="card__text">Limpieza profesional, diagnóstico digital y plan preventivo personalizado para mantener tu sonrisa sana.</p>
-          <span class="card__price text-gold">Desde $12.000</span>
+        <div class="servicio-card fade-in">
+          <div class="servicio-icon">🛡️</div>
+          <h3>PrevenCIÓN Integral</h3>
+          <p>Limpieza profesional, diagnóstico digital y plan preventivo personalizado para mantener tu sonrisa sana.</p>
+          <span class="servicio-precio">Desde $12.000</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section class="section about">
+  <section class="section sobre-mi">
     <div class="container">
-      <div class="about__grid">
-        <div class="about__image fade-in">
-          <div class="about__img-placeholder">👨‍⚕️</div>
+      <div class="sobre-image fade-in">
+        <div class="image-placeholder">👨‍⚕️</div>
+        <div class="experience-badge">
+          <span class="number">15+</span>
+          <span class="label">Años de Experiencia</span>
         </div>
-        <div class="about__content fade-in">
-          <span class="section__tag">Sobre Nosotros</span>
-          <h2 class="section__title">Excelencia en cada <span class="text-gold">detalle</span></h2>
-          <p class="about__text">Con más de 15 años de trayectoria, nuestro equipo de profesionales combina la experiencia con la tecnología más avanzada para ofrecer tratamientos odontológicos de nivel internacional.</p>
-          <p class="about__text">Creemos que cada sonrisa es única y merece un tratamiento personalizado. Por eso, utilizamos técnicas minimamente invasivas y materiales de la más alta calidad.</p>
-          <div class="about__features">
-            <div class="about__feature">
-              <span class="text-gold">✓</span> Equipamiento digital de última generación
-            </div>
-            <div class="about__feature">
-              <span class="text-gold">✓</span> Tratamientos personalizados
-            </div>
-            <div class="about__feature">
-              <span class="text-gold">✓</span> Ambiente cálido y confortable
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="sobre-content fade-in">
+        <div class="subtitle">Sobre Nosotros</div>
+        <h2>Excelencia en cada <span class="highlight">detalle</span></h2>
+        <p>Con más de 15 años de trayectoria, nuestro equipo de profesionales combina la experiencia con la tecnología más avanzada para ofrecer tratamientos odontológicos de nivel internacional.</p>
+        <p>Creemos que cada sonrisa es única y merece un tratamiento personalizado. Por eso, utilizamos técnicas minimamente invasivas y materiales de la más alta calidad.</p>
+        <ul class="sobre-list">
+          <li>
+            <span class="check">✓</span>
+            Equipamiento digital de última generación
+          </li>
+          <li>
+            <span class="check">✓</span>
+            Tratamientos personalizados
+          </li>
+          <li>
+            <span class="check">✓</span>
+            Ambiente cálido y confortable
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="section testimonials">
+  <section class="section testimonios">
     <div class="container">
-      <div class="section__header fade-in">
-        <span class="section__tag">Testimonios</span>
-        <h2 class="section__title">Lo que dicen nuestros <span class="text-gold">pacientes</span></h2>
+      <div class="section-header fade-in">
+        <div class="accent-line"></div>
+        <h2>Lo que dicen nuestros <span class="highlight">pacientes</span></h2>
       </div>
-      <div class="testimonials__grid">
-        <div class="card card--dark card--testimonial fade-in">
-          <div class="card__stars">★★★★★</div>
-          <p class="card__text">"Increíble experiencia. El blanqueamiento superó mis expectativas. El equipo es muy profesional y el ambiente es muy relajado."</p>
-          <div class="card__author">
-            <div class="card__avatar">MR</div>
+      <div class="testimonios-grid">
+        <div class="testimonio-card fade-in">
+          <div class="testimonio-stars">★★★★★</div>
+          <blockquote>"Increíble experiencia. El blanqueamiento superó mis expectativas. El equipo es muy profesional y el ambiente es muy relajado."</blockquote>
+          <div class="testimonio-author">
+            <div class="testimonio-avatar">MR</div>
             <div>
-              <span class="card__name">María Rodríguez</span>
-              <span class="card__role">Blanqueamiento</span>
+              <span class="name">María Rodríguez</span>
+              <span class="verified">✓ Verificado</span>
             </div>
           </div>
         </div>
-        <div class="card card--dark card--testimonial fade-in">
-          <div class="card__stars">★★★★★</div>
-          <p class="card__text">"Me pusieron implantes y quedé maravillado. El Dr. explicó cada paso con paciencia. Recuperé mi sonrisa y mi confianza."</p>
-          <div class="card__author">
-            <div class="card__avatar">CL</div>
+        <div class="testimonio-card fade-in">
+          <div class="testimonio-stars">★★★★★</div>
+          <blockquote>"Me pusieron implantes y quedé maravillado. El Dr. explicó cada paso con paciencia. Recuperé mi sonrisa y mi confianza."</blockquote>
+          <div class="testimonio-author">
+            <div class="testimonio-avatar">CL</div>
             <div>
-              <span class="card__name">Carlos López</span>
-              <span class="card__role">Implantes</span>
+              <span class="name">Carlos López</span>
+              <span class="verified">✓ Verificado</span>
             </div>
           </div>
         </div>
-        <div class="card card--dark card--testimonial fade-in">
-          <div class="card__stars">★★★★★</div>
-          <p class="card__text">"La ortodoncia invisible fue perfecta. Nadie notó que la usaba y mis dientes quedaron perfectos. Totalmente recomendado."</p>
-          <div class="card__author">
-            <div class="card__avatar">AG</div>
+        <div class="testimonio-card fade-in">
+          <div class="testimonio-stars">★★★★★</div>
+          <blockquote>"La ortodoncia invisible fue perfecta. Nadie notó que la usaba y mis dientes quedaron perfectos. Totalmente recomendado."</blockquote>
+          <div class="testimonio-author">
+            <div class="testimonio-avatar">AG</div>
             <div>
-              <span class="card__name">Ana García</span>
-              <span class="card__role">Ortodoncia Invisible</span>
+              <span class="name">Ana García</span>
+              <span class="verified">✓ Verificado</span>
             </div>
           </div>
         </div>
@@ -249,15 +261,13 @@
   </section>
 
   <!-- CTA -->
-  <section class="section cta">
+  <section class="cta-section">
     <div class="container">
-      <div class="cta__inner fade-in">
-        <h2 class="cta__title">¿Listo para tu <span class="text-gold">mejor sonrisa</span>?</h2>
-        <p class="cta__text">Reservá tu turno hoy y descubrí por qué somos la clínica odontológica preferida.</p>
-        <div class="cta__actions">
-          <a href="contacto.html" class="btn btn--gold btn--lg">Reservar Turno</a>
-          <a href="https://wa.me/543791234567" target="_blank" rel="noopener" class="btn btn--outline btn--lg">WhatsApp</a>
-        </div>
+      <h2 class="fade-in">¿Listo para tu <span class="highlight">mejor sonrisa</span>?</h2>
+      <p class="fade-in">Reservá tu turno hoy y descubrí por qué somos la clínica odontológica preferida.</p>
+      <div class="cta-buttons fade-in">
+        <a href="contacto.html" class="btn btn-primary">Reservar Turno</a>
+        <a href="https://wa.me/543791234567" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp</a>
       </div>
     </div>
   </section>
@@ -265,41 +275,55 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
-        <div class="footer__col">
-          <a href="index.html" class="footer__brand">
-            <span class="navbar__logo">ODONTO</span><span class="navbar__logo--gold">PREMIUM</span>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon">OD</span>
+            <span>ONTO <strong style="color:var(--gold)">PREMIUM</strong></span>
           </a>
-          <p class="footer__desc">Odontología de excelencia con tecnología de vanguardia y atención personalizada.</p>
+          <p>Odontología de excelencia con tecnología de vanguardia y atención personalizada.</p>
         </div>
-        <div class="footer__col">
-          <h4 class="footer__heading">Navegación</h4>
-          <ul class="footer__links">
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="servicios.html">Servicios</a></li>
             <li><a href="galeria.html">Trabajos</a></li>
             <li><a href="contacto.html">Reservar Turno</a></li>
           </ul>
         </div>
-        <div class="footer__col">
-          <h4 class="footer__heading">Contacto</h4>
-          <ul class="footer__links">
-            <li><span>📍</span> Av. Principal 1234, Corrientes</li>
-            <li><span>📞</span> +54 379 123-4567</li>
-            <li><span>✉️</span> info@odontopremium.com.ar</li>
-            <li><span>🕐</span> Lun-Vie: 9:00 - 18:00</li>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+543791234567">📞 +54 379 123-4567</a></li>
+            <li><a href="mailto:info@odontopremium.com.ar">✉️ info@odontopremium.com.ar</a></li>
+            <li>📍 Av. Principal 1234, Corrientes</li>
+            <li>🕐 Lun-Vie: 9:00 - 18:00</li>
           </ul>
         </div>
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <ul>
+            <li>Lun - Vie: 9:00 - 18:00</li>
+            <li>Sáb: 9:00 - 13:00</li>
+            <li>Dom: Cerrado</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
       </div>
-      <div class="footer__bottom">
+      <div class="footer-bottom">
         <p>&copy; 2026 Odonto Premium. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/543791234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-    <span>💬</span>
+  <a href="https://wa.me/543791234567" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    💬
   </a>
 
   <script src="js/main.js"></script>

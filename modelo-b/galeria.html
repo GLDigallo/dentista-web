@@ -19,213 +19,129 @@
 
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <a href="index.html" class="navbar__brand">
-        <span class="navbar__logo">ODONTO</span><span class="navbar__logo--gold">PREMIUM</span>
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">OD</span>
+        <span>ONTO <strong style="color:var(--gold)">PREMIUM</strong></span>
       </a>
-      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+      <button class="hamburger" id="navToggle" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
-      <ul class="navbar__links" id="navLinks">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="galeria.html" class="active">Trabajos</a></li>
-        <li><a href="contacto.html" class="btn btn--gold btn--nav">Reservar Turno</a></li>
+        <li><a href="contacto.html" class="nav-cta">Reservar Turno</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Page Header -->
-  <header class="page-header">
+  <!-- Hero -->
+  <header class="hero" style="min-height:50vh">
     <div class="container">
-      <span class="page-header__tag fade-in">Nuestros Trabajos</span>
-      <h1 class="page-header__title fade-in">Galería de <span class="text-gold">Resultados</span></h1>
-      <p class="page-header__desc fade-in">Mirá los increíbles resultados que logramos con nuestros pacientes. Cada caso es una historia de transformación.</p>
+      <div class="hero-content" style="grid-column:1/-1;text-align:center">
+        <h1 class="fade-in">
+          Galería de <span class="highlight">Resultados</span>
+        </h1>
+        <p class="fade-in" style="max-width:640px;margin:0 auto">
+          Mirá los increíbles resultados que logramos con nuestros pacientes. Cada caso es una historia de transformación.
+        </p>
+      </div>
     </div>
   </header>
 
-  <!-- Gallery Filters -->
-  <section class="section gallery">
+  <!-- Gallery -->
+  <section class="section">
     <div class="container">
-      <div class="gallery__filters fade-in">
-        <button class="gallery__filter active" data-filter="all">Todos</button>
-        <button class="gallery__filter" data-filter="blanqueamiento">Blanqueamiento</button>
-        <button class="gallery__filter" data-filter="implantes">Implantes</button>
-        <button class="gallery__filter" data-filter="carillas">Carillas</button>
-        <button class="gallery__filter" data-filter="ortodoncia">Ortodoncia</button>
-        <button class="gallery__filter" data-filter="estetica">Estética</button>
+      <div class="galeria-filters fade-in">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="blanqueamiento">Blanqueamiento</button>
+        <button class="filter-btn" data-filter="implantes">Implantes</button>
+        <button class="filter-btn" data-filter="carillas">Carillas</button>
+        <button class="filter-btn" data-filter="ortodoncia">Ortodoncia</button>
+        <button class="filter-btn" data-filter="estetica">Estética</button>
       </div>
 
-      <div class="gallery__grid" id="galleryGrid">
+      <div class="galeria-grid" id="galleryGrid">
 
-        <!-- Gallery Item 1 -->
-        <div class="gallery__item fade-in" data-category="blanqueamiento">
-          <div class="gallery__before-after">
-            <div class="gallery__img gallery__img--before">
-              <span class="gallery__img-label">Antes</span>
-              <div class="gallery__placeholder">🦷</div>
-            </div>
-            <div class="gallery__img gallery__img--after">
-              <span class="gallery__img-label gallery__img-label--after">Después</span>
-              <div class="gallery__placeholder">✨</div>
-            </div>
-          </div>
-          <div class="gallery__info">
-            <h3 class="gallery__title">Blanqueamiento Premium</h3>
-            <p class="gallery__desc">Resultado de blanqueamiento LED en una sola sesión. 8 tonos más clara.</p>
-            <span class="gallery__tag text-gold">Blanqueamiento</span>
+        <div class="galeria-item fade-in" data-category="blanqueamiento">
+          <div class="galeria-placeholder">🦷</div>
+          <span class="category-tag">Blanqueamiento</span>
+          <div class="overlay">
+            <h4>Blanqueamiento Premium</h4>
+            <p>8 tonos más clara en una sola sesión LED</p>
           </div>
         </div>
 
-        <!-- Gallery Item 2 -->
-        <div class="gallery__item fade-in" data-category="implantes">
-          <div class="gallery__before-after">
-            <div class="gallery__img gallery__img--before">
-              <span class="gallery__img-label">Antes</span>
-              <div class="gallery__placeholder">😔</div>
-            </div>
-            <div class="gallery__img gallery__img--after">
-              <span class="gallery__img-label gallery__img-label--after">Después</span>
-              <div class="gallery__placeholder">😊</div>
-            </div>
-          </div>
-          <div class="gallery__info">
-            <h3 class="gallery__title">Rehabilitación con Implantes</h3>
-            <p class="gallery__desc">Rehabilitación completa con implantes de titanio. Sonrisa restaurada.</p>
-            <span class="gallery__tag text-gold">Implantes</span>
+        <div class="galeria-item fade-in" data-category="implantes">
+          <div class="galeria-placeholder">😊</div>
+          <span class="category-tag">Implantes</span>
+          <div class="overlay">
+            <h4>Rehabilitación con Implantes</h4>
+            <p>Sonrisa restaurada con implantes de titanio</p>
           </div>
         </div>
 
-        <!-- Gallery Item 3 -->
-        <div class="gallery__item fade-in" data-category="carillas">
-          <div class="gallery__before-after">
-            <div class="gallery__img gallery__img--before">
-              <span class="gallery__img-label">Antes</span>
-              <div class="gallery__placeholder">😕</div>
-            </div>
-            <div class="gallery__img gallery__img--after">
-              <span class="gallery__img-label gallery__img-label--after">Después</span>
-              <div class="gallery__placeholder">😁</div>
-            </div>
-          </div>
-          <div class="gallery__info">
-            <h3 class="gallery__title">Carillas de Porcelana</h3>
-            <p class="gallery__desc">Diseño de sonrisa con 8 carillas de porcelana ultra delgadas.</p>
-            <span class="gallery__tag text-gold">Carillas</span>
+        <div class="galeria-item fade-in" data-category="carillas">
+          <div class="galeria-placeholder">😁</div>
+          <span class="category-tag">Carillas</span>
+          <div class="overlay">
+            <h4>Carillas de Porcelana</h4>
+            <p>8 carillas ultra delgadas para sonrisa perfecta</p>
           </div>
         </div>
 
-        <!-- Gallery Item 4 -->
-        <div class="gallery__item fade-in" data-category="ortodoncia">
-          <div class="gallery__before-after">
-            <div class="gallery__img gallery__img--before">
-              <span class="gallery__img-label">Antes</span>
-              <div class="gallery__placeholder">😐</div>
-            </div>
-            <div class="gallery__img gallery__img--after">
-              <span class="gallery__img-label gallery__img-label--after">Después</span>
-              <div class="gallery__placeholder">😃</div>
-            </div>
-          </div>
-          <div class="gallery__info">
-            <h3 class="gallery__title">Ortodoncia Invisible</h3>
-            <p class="gallery__desc">Alineación completa con sistema de alineadores transparentes en 12 meses.</p>
-            <span class="gallery__tag text-gold">Ortodoncia</span>
+        <div class="galeria-item fade-in" data-category="ortodoncia">
+          <div class="galeria-placeholder">😃</div>
+          <span class="category-tag">Ortodoncia</span>
+          <div class="overlay">
+            <h4>Ortodoncia Invisible</h4>
+            <p>Alineación completa en 12 meses</p>
           </div>
         </div>
 
-        <!-- Gallery Item 5 -->
-        <div class="gallery__item fade-in" data-category="estetica">
-          <div class="gallery__before-after">
-            <div class="gallery__img gallery__img--before">
-              <span class="gallery__img-label">Antes</span>
-              <div class="gallery__placeholder">🙂</div>
-            </div>
-            <div class="gallery__img gallery__img--after">
-              <span class="gallery__img-label gallery__img-label--after">Después</span>
-              <div class="gallery__placeholder">🤩</div>
-            </div>
-          </div>
-          <div class="gallery__info">
-            <h3 class="gallery__title">Diseño Digital de Sonrisa</h3>
-            <p class="gallery__desc">Transformación completa con diseño digital personalizado y armonización facial.</p>
-            <span class="gallery__tag text-gold">Estética</span>
+        <div class="galeria-item fade-in" data-category="estetica">
+          <div class="galeria-placeholder">🤩</div>
+          <span class="category-tag">Estética</span>
+          <div class="overlay">
+            <h4>Diseño Digital de Sonrisa</h4>
+            <p>Transformación con armonización facial</p>
           </div>
         </div>
 
-        <!-- Gallery Item 6 -->
-        <div class="gallery__item fade-in" data-category="blanqueamiento">
-          <div class="gallery__before-after">
-            <div class="gallery__img gallery__img--before">
-              <span class="gallery__img-label">Antes</span>
-              <div class="gallery__placeholder">😬</div>
-            </div>
-            <div class="gallery__img gallery__img--after">
-              <span class="gallery__img-label gallery__img-label--after">Después</span>
-              <div class="gallery__placeholder">😁</div>
-            </div>
-          </div>
-          <div class="gallery__info">
-            <h3 class="gallery__title">Blanqueamiento Express</h3>
-            <p class="gallery__desc">Blanqueamiento de emergencia para evento especial. Resultados en 45 minutos.</p>
-            <span class="gallery__tag text-gold">Blanqueamiento</span>
+        <div class="galeria-item fade-in" data-category="blanqueamiento">
+          <div class="galeria-placeholder">😁</div>
+          <span class="category-tag">Blanqueamiento</span>
+          <div class="overlay">
+            <h4>Blanqueamiento Express</h4>
+            <p>Resultados en 45 minutos para evento especial</p>
           </div>
         </div>
 
-        <!-- Gallery Item 7 -->
-        <div class="gallery__item fade-in" data-category="implantes">
-          <div class="gallery__before-after">
-            <div class="gallery__img gallery__img--before">
-              <span class="gallery__img-label">Antes</span>
-              <div class="gallery__placeholder">😟</div>
-            </div>
-            <div class="gallery__img gallery__img--after">
-              <span class="gallery__img-label gallery__img-label--after">Después</span>
-              <div class="gallery__placeholder">😊</div>
-            </div>
-          </div>
-          <div class="gallery__info">
-            <h3 class="gallery__title">Implante Unitario</h3>
-            <p class="gallery__desc">Reemplazo de diente perdido con implante y corona de porcelana natural.</p>
-            <span class="gallery__tag text-gold">Implantes</span>
+        <div class="galeria-item fade-in" data-category="implantes">
+          <div class="galeria-placeholder">😊</div>
+          <span class="category-tag">Implantes</span>
+          <div class="overlay">
+            <h4>Implante Unitario</h4>
+            <p>Reemplazo con implante y corona natural</p>
           </div>
         </div>
 
-        <!-- Gallery Item 8 -->
-        <div class="gallery__item fade-in" data-category="carillas">
-          <div class="gallery__before-after">
-            <div class="gallery__img gallery__img--before">
-              <span class="gallery__img-label">Antes</span>
-              <div class="gallery__placeholder">😕</div>
-            </div>
-            <div class="gallery__img gallery__img--after">
-              <span class="gallery__img-label gallery__img-label--after">Después</span>
-              <div class="gallery__placeholder">😎</div>
-            </div>
-          </div>
-          <div class="gallery__info">
-            <h3 class="gallery__title">Carillas Zirconia</h3>
-            <p class="gallery__desc">Sonrisa Hollywood con carillas de zirconia de alta translucidez.</p>
-            <span class="gallery__tag text-gold">Carillas</span>
+        <div class="galeria-item fade-in" data-category="carillas">
+          <div class="galeria-placeholder">😎</div>
+          <span class="category-tag">Carillas</span>
+          <div class="overlay">
+            <h4>Carillas Zirconia</h4>
+            <p>Sonrisa Hollywood con alta translucidez</p>
           </div>
         </div>
 
-        <!-- Gallery Item 9 -->
-        <div class="gallery__item fade-in" data-category="estetica">
-          <div class="gallery__before-after">
-            <div class="gallery__img gallery__img--before">
-              <span class="gallery__img-label">Antes</span>
-              <div class="gallery__placeholder">😐</div>
-            </div>
-            <div class="gallery__img gallery__img--after">
-              <span class="gallery__img-label gallery__img-label--after">Después</span>
-              <div class="gallery__placeholder">🥳</div>
-            </div>
-          </div>
-          <div class="gallery__info">
-            <h3 class="gallery__title">Renovación Completa</h3>
-            <p class="gallery__desc">Makeover dental integral: blanqueamiento + carillas + contorno gingival.</p>
-            <span class="gallery__tag text-gold">Estética</span>
+        <div class="galeria-item fade-in" data-category="estetica">
+          <div class="galeria-placeholder">🥳</div>
+          <span class="category-tag">Estética</span>
+          <div class="overlay">
+            <h4>Renovación Completa</h4>
+            <p>Makeover dental integral personalizado</p>
           </div>
         </div>
 
@@ -234,15 +150,13 @@
   </section>
 
   <!-- CTA -->
-  <section class="section cta">
+  <section class="cta-section">
     <div class="container">
-      <div class="cta__inner fade-in">
-        <h2 class="cta__title">¿Te gusta lo que <span class="text-gold">ves</span>?</h2>
-        <p class="cta__text">Reservá tu consulta y descubrí cómo podemos transformar tu sonrisa.</p>
-        <div class="cta__actions">
-          <a href="contacto.html" class="btn btn--gold btn--lg">Reservar Turno</a>
-          <a href="https://wa.me/543791234567" target="_blank" rel="noopener" class="btn btn--outline btn--lg">WhatsApp</a>
-        </div>
+      <h2 class="fade-in">¿Te gusta lo que <span class="highlight">ves</span>?</h2>
+      <p class="fade-in">Reservá tu consulta y descubrí cómo podemos transformar tu sonrisa.</p>
+      <div class="cta-buttons fade-in">
+        <a href="contacto.html" class="btn btn-primary">Reservar Turno</a>
+        <a href="https://wa.me/543791234567" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp</a>
       </div>
     </div>
   </section>
@@ -250,41 +164,55 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
-        <div class="footer__col">
-          <a href="index.html" class="footer__brand">
-            <span class="navbar__logo">ODONTO</span><span class="navbar__logo--gold">PREMIUM</span>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon">OD</span>
+            <span>ONTO <strong style="color:var(--gold)">PREMIUM</strong></span>
           </a>
-          <p class="footer__desc">Odontología de excelencia con tecnología de vanguardia y atención personalizada.</p>
+          <p>Odontología de excelencia con tecnología de vanguardia y atención personalizada.</p>
         </div>
-        <div class="footer__col">
-          <h4 class="footer__heading">Navegación</h4>
-          <ul class="footer__links">
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="servicios.html">Servicios</a></li>
             <li><a href="galeria.html">Trabajos</a></li>
             <li><a href="contacto.html">Reservar Turno</a></li>
           </ul>
         </div>
-        <div class="footer__col">
-          <h4 class="footer__heading">Contacto</h4>
-          <ul class="footer__links">
-            <li><span>📍</span> Av. Principal 1234, Corrientes</li>
-            <li><span>📞</span> +54 379 123-4567</li>
-            <li><span>✉️</span> info@odontopremium.com.ar</li>
-            <li><span>🕐</span> Lun-Vie: 9:00 - 18:00</li>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+543791234567">📞 +54 379 123-4567</a></li>
+            <li><a href="mailto:info@odontopremium.com.ar">✉️ info@odontopremium.com.ar</a></li>
+            <li>📍 Av. Principal 1234, Corrientes</li>
+            <li>🕐 Lun-Vie: 9:00 - 18:00</li>
           </ul>
         </div>
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <ul>
+            <li>Lun - Vie: 9:00 - 18:00</li>
+            <li>Sáb: 9:00 - 13:00</li>
+            <li>Dom: Cerrado</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
       </div>
-      <div class="footer__bottom">
+      <div class="footer-bottom">
         <p>&copy; 2026 Odonto Premium. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/543791234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-    <span>💬</span>
+  <a href="https://wa.me/543791234567" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    💬
   </a>
 
   <script src="js/main.js"></script>
