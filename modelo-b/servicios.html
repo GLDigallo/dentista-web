@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://odontopremium.com.ar/assets/og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -31,27 +31,23 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="servicios.html" class="active">Servicios</a></li>
         <li><a href="galeria.html">Trabajos</a></li>
-        <li><a href="contacto.html" class="nav-cta">Reservar Turno</a></li>
+        <li><a href="contacto.html" class="nav-cta">Reservar</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero" style="min-height:50vh">
+  <!-- Page Hero -->
+  <header class="page-hero">
     <div class="container">
-      <div class="hero-content" style="grid-column:1/-1;text-align:center">
-        <h1 class="fade-in">
-          Tratamientos <span class="highlight">Premium</span>
-        </h1>
-        <p class="fade-in" style="max-width:640px;margin:0 auto">
-          Cada tratamiento es diseñado para brindarte resultados excepcionales con la máxima comodidad y seguridad.
-        </p>
-      </div>
+      <span class="eyebrow fade-in">Nuestros Tratamientos</span>
+      <h1 class="fade-in">Tratamientos <span class="highlight">Premium</span></h1>
+      <div class="editorial-divider centered fade-in"></div>
+      <p class="fade-in">Cada tratamiento es diseñado para brindarte resultados excepcionales con la máxima comodidad y seguridad.</p>
     </div>
   </header>
 
-  <!-- Services -->
-  <section class="section">
+  <!-- Services Grid -->
+  <section class="section" style="padding:80px 0">
     <div class="container">
       <div class="servicios-grid">
 
@@ -119,7 +115,7 @@
         </div>
 
         <div class="servicio-card fade-in" id="ortodoncia">
-          <div class="servicio-icon">🔧</div>
+          <div class="servicio-icon">💎</div>
           <h3>Ortodoncia Invisible</h3>
           <p>Sistema de alineadores transparentes personalizados que corrigen la posición de tus dientes de forma cómoda y casi invisible. Control digital del progreso para resultados predecibles.</p>
           <ul style="list-style:none;margin-bottom:24px">
@@ -162,7 +158,7 @@
 
         <div class="servicio-card fade-in" id="prevencion">
           <div class="servicio-icon">🛡️</div>
-          <h3>Prevención Integral</h3>
+          <h3>PrevenCIÓN Integral</h3>
           <p>Plan preventivo personalizado con limpieza profesional, diagnóstico digital por rayos X de baja dosis y seguimiento continuo para mantener tu salud bucal en óptimas condiciones.</p>
           <ul style="list-style:none;margin-bottom:24px">
             <li style="display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text-muted);font-size:0.9375rem">
@@ -188,8 +184,9 @@
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
-      <h2 class="fade-in">¿Tenés dudas sobre algún <span class="highlight">tratamiento</span>?</h2>
-      <p class="fade-in">Contactanos y te asesoramos sin compromiso sobre la mejor opción para vos.</p>
+      <span class="eyebrow fade-in">¿Tenés dudas?</span>
+      <h2 class="fade-in">Consultanos sin <span class="highlight">compromiso</span></h2>
+      <p class="fade-in">Contactanos y te asesoramos sobre la mejor opción para vos.</p>
       <div class="cta-buttons fade-in">
         <a href="contacto.html" class="btn btn-primary">Consultar Ahora</a>
         <a href="https://wa.me/543791234567" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp</a>
@@ -197,48 +194,17 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer — Minimal -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">
-            <span class="logo-icon">OD</span>
-            <span>ONTO <strong style="color:var(--gold)">PREMIUM</strong></span>
-          </a>
-          <p>Odontología de excelencia con tecnología de vanguardia y atención personalizada.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Navegación</h4>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="galeria.html">Trabajos</a></li>
-            <li><a href="contacto.html">Reservar Turno</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <ul>
-            <li><a href="tel:+543791234567">📞 +54 379 123-4567</a></li>
-            <li><a href="mailto:info@odontopremium.com.ar">✉️ info@odontopremium.com.ar</a></li>
-            <li>📍 Av. Principal 1234, Corrientes</li>
-            <li>🕐 Lun-Vie: 9:00 - 18:00</li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Horarios</h4>
-          <ul>
-            <li>Lun - Vie: 9:00 - 18:00</li>
-            <li>Sáb: 9:00 - 13:00</li>
-            <li>Dom: Cerrado</li>
-          </ul>
-          <div class="footer-social">
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="TikTok">🎵</a>
-          </div>
-        </div>
+      <a href="index.html" class="footer-logo">
+        <span class="logo-icon">OD</span>
+        <span>ONTO <strong style="color:var(--gold)">PREMIUM</strong></span>
+      </a>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="TikTok">🎵</a>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Odonto Premium. Todos los derechos reservados.</p>

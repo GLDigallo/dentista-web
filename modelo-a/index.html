@@ -15,7 +15,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,6 +54,7 @@
         <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="galeria.html">Trabajos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
         <li><a href="contacto.html" class="nav-cta">Reservar Turno</a></li>
       </ul>
       <div class="hamburger">
@@ -63,45 +63,20 @@
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero — Full-width horizontal -->
   <section class="hero">
     <div class="container">
       <div class="hero-content fade-in">
-        <h1>Tu sonrisa es nuestra <span class="highlight">pasión</span></h1>
-        <p>Brindamos atención dental integral con tecnología de vanguardia y un equipo profesional comprometido con tu salud y bienestar. Porque cada sonrisa merece ser única.</p>
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Atención profesional de excellence
+        </div>
+        <h1>Cuidamos tu salud bucal con <span class="highlight">excelencia</span></h1>
+        <p>Clínica dental integral con tecnología de vanguardia y un equipo profesional comprometido. Más de 15 años transformando sonrisas con los más altos estándares de calidad.</p>
         <div class="hero-buttons">
           <a href="https://wa.me/543791234567" target="_blank" class="btn btn-whatsapp" data-whatsapp="Hola, quiero agendar un turno">💬 WhatsApp</a>
           <a href="contacto.html" class="btn btn-primary">Reservar Turno</a>
-          <a href="servicios.html" class="btn btn-secondary">Ver Servicios</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <h3>15+</h3>
-            <p>Años de experiencia</p>
-          </div>
-          <div class="stat">
-            <h3>3000+</h3>
-            <p>Sonrisas atendidas</p>
-          </div>
-          <div class="stat">
-            <h3>4.9★</h3>
-            <p>Google Reviews</p>
-          </div>
-        </div>
-      </div>
-      <div class="hero-visual fade-in">
-        <div class="hero-image-card">
-          <div class="hero-image-placeholder">😁</div>
-        </div>
-        <div class="floating-badge top-right">
-          <div class="badge-icon">⭐</div>
-          <div class="badge-text">4.9 en Google</div>
-          <div class="badge-sub">+250 reseñas</div>
-        </div>
-        <div class="floating-badge bottom-left">
-          <div class="badge-icon">🏆</div>
-          <div class="badge-text">Certificados</div>
-          <div class="badge-sub">Odontología moderna</div>
+          <a href="servicios.html" class="btn btn-outline-white">Ver Servicios</a>
         </div>
       </div>
     </div>
@@ -129,7 +104,7 @@
     </div>
   </section>
 
-  <!-- Servicios -->
+  <!-- Servicios — Horizontal scrollable row -->
   <section class="section" id="servicios">
     <div class="container">
       <div class="section-header fade-in">
@@ -137,42 +112,48 @@
         <h2>Nuestros Servicios</h2>
         <p>Soluciones dentales completas para toda la familia, con los más altos estándares de calidad y comfort.</p>
       </div>
-      <div class="servicios-grid">
-        <div class="servicio-card fade-in">
-          <div class="servicio-icon">✨</div>
-          <h3>Blanqueamiento Dental</h3>
-          <p>Recuperá el brillo natural de tu sonrisa con nuestro blanqueamiento profesional de larga duración y resultados visibles desde la primera sesión.</p>
-          <span class="servicio-precio">Desde $80.000</span>
+      <div class="servicios-scroll-wrapper fade-in">
+        <div class="servicios-scroll">
+          <div class="servicio-card">
+            <div class="servicio-icon">✨</div>
+            <h3>Blanqueamiento Dental</h3>
+            <p>Recuperá el brillo natural de tu sonrisa con nuestro blanqueamiento profesional de larga duración y resultados visibles desde la primera sesión.</p>
+            <span class="servicio-precio">Desde $80.000</span>
+          </div>
+          <div class="servicio-card">
+            <div class="servicio-icon">😁</div>
+            <h3>Carillas Dentales</h3>
+            <p>Transformá tu sonrisa con carillas de porcelana o composite. Diseño personalizado que se adapta a tu rostro y estilo.</p>
+            <span class="servicio-precio">Desde $120.000</span>
+          </div>
+          <div class="servicio-card">
+            <div class="servicio-icon">🔩</div>
+            <h3>Implantes Dentales</h3>
+            <p>Recuperá piezas perdidas con implantes de titanio de primera calidad. Procedimiento seguro con tecnología de guía quirúrgica.</p>
+            <span class="servicio-precio">Desde $350.000</span>
+          </div>
+          <div class="servicio-card">
+            <div class="servicio-icon">🪥</div>
+            <h3>Limpieza Profesional</h3>
+            <p>Eliminación de sarro y manchas con ultrasonido y airflow. Mantenimiento esencial para encías sanas y una boca saludable.</p>
+            <span class="servicio-precio">Desde $25.000</span>
+          </div>
+          <div class="servicio-card">
+            <div class="servicio-icon">🦷</div>
+            <h3>Ortodoncia</h3>
+            <p>Alineación dental con brackets convencionales o alineadores transparentes. Soluciones para niños, adolescentes y adultos.</p>
+            <span class="servicio-precio">Consulta sin cargo</span>
+          </div>
+          <div class="servicio-card">
+            <div class="servicio-icon">👨‍⚕️</div>
+            <h3>Odontología General</h3>
+            <p>Consultas, prevención, empastaduras, extracciones y tratamientos de conducto. Cuidado integral de tu salud bucal.</p>
+            <span class="servicio-precio">Consulta desde $15.000</span>
+          </div>
         </div>
-        <div class="servicio-card fade-in">
-          <div class="servicio-icon">😁</div>
-          <h3>Carillas Dentales</h3>
-          <p>Transformá tu sonrisa con carillas de porcelana o composite. Diseño personalizado que se adapta a tu rostro y estilo.</p>
-          <span class="servicio-precio">Desde $120.000</span>
-        </div>
-        <div class="servicio-card fade-in">
-          <div class="servicio-icon">🔩</div>
-          <h3>Implantes Dentales</h3>
-          <p>Recuperá piezas perdidas con implantes de titanio de primera calidad. Procedimiento seguro con tecnología de guía quirúrgica.</p>
-          <span class="servicio-precio">Desde $350.000</span>
-        </div>
-        <div class="servicio-card fade-in">
-          <div class="servicio-icon">🪥</div>
-          <h3>Limpieza Profesional</h3>
-          <p>Eliminación de sarro y manchas con ultrasonido y airflow. Mantenimiento esencial para encías sanas y una boca saludable.</p>
-          <span class="servicio-precio">Desde $25.000</span>
-        </div>
-        <div class="servicio-card fade-in">
-          <div class="servicio-icon">🦷</div>
-          <h3>Ortodoncia</h3>
-          <p>Alineación dental con brackets convencionales o alineadores transparentes. Soluciones para niños, adolescentes y adultos.</p>
-          <span class="servicio-precio">Consulta sin cargo</span>
-        </div>
-        <div class="servicio-card fade-in">
-          <div class="servicio-icon">👨‍⚕️</div>
-          <h3>Odontología General</h3>
-          <p>Consultas, prevención, empastaduras, extracciones y tratamientos de conducto. Cuidado integral de tu salud bucal.</p>
-          <span class="servicio-precio">Consulta desde $15.000</span>
+        <div class="scroll-nav">
+          <button onclick="scrollServicios(-1)" aria-label="Anterior">←</button>
+          <button onclick="scrollServicios(1)" aria-label="Siguiente">→</button>
         </div>
       </div>
       <div class="text-center mt-4 fade-in">
@@ -181,8 +162,32 @@
     </div>
   </section>
 
-  <!-- Sobre Nosotros -->
-  <section class="section sobre-mi">
+  <!-- Stats Banner — Full-width bar -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-grid fade-in">
+        <div class="stat-item">
+          <h3>15+</h3>
+          <p>Años de experiencia</p>
+        </div>
+        <div class="stat-item">
+          <h3>3000+</h3>
+          <p>Sonrisas atendidas</p>
+        </div>
+        <div class="stat-item">
+          <h3>4.9★</h3>
+          <p>Calificación en Google</p>
+        </div>
+        <div class="stat-item">
+          <h3>98%</h3>
+          <p>Pacientes satisfechos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros — Photo left, credentials right -->
+  <section class="section sobre-nosotros">
     <div class="container">
       <div class="sobre-image fade-in">
         <div class="image-placeholder">👩‍⚕️</div>
@@ -195,19 +200,19 @@
         <div class="subtitle">Sobre Nosotros</div>
         <h2>Comprometidos con tu salud bucal</h2>
         <p>Somos un equipo de profesionales dedicados a brindar la mejor experiencia odontológica. Combinamos la tecnología más avanzada con un trato humano y cercano para que cada visita sea confortable.</p>
-        <ul class="sobre-list">
-          <li><span class="check">✓</span> Profesionalidad y ética en cada procedimiento</li>
-          <li><span class="check">✓</span> Tecnología digital de última generación</li>
-          <li><span class="check">✓</span> Trato personalizado y cálido</li>
-          <li><span class="check">✓</span> Instalaciones modernas y confortables</li>
-          <li><span class="check">✓</span> Certificaciones nacionales e internacionales</li>
+        <ul class="credentials-list">
+          <li><span class="cred-icon">✓</span> Profesionalidad y ética en cada procedimiento</li>
+          <li><span class="cred-icon">✓</span> Tecnología digital de última generación</li>
+          <li><span class="cred-icon">✓</span> Trato personalizado y cálido</li>
+          <li><span class="cred-icon">✓</span> Instalaciones modernas y confortables</li>
+          <li><span class="cred-icon">✓</span> Certificaciones nacionales e internacionales</li>
         </ul>
         <a href="contacto.html" class="btn btn-primary">Conocé Más</a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonios -->
+  <!-- Testimonios — Horizontal carousel with dots -->
   <section class="section testimonios">
     <div class="container">
       <div class="section-header fade-in">
@@ -215,39 +220,68 @@
         <h2>Lo que dicen nuestros pacientes</h2>
         <p>Miles de personas confían en nosotros para el cuidado de sus sonrisas.</p>
       </div>
-      <div class="testimonios-grid">
-        <div class="testimonio-card fade-in">
-          <div class="testimonio-stars">★★★★★</div>
-          <blockquote>"Excelente atención. Me hicieron un blanqueamiento y los resultados superaron mis expectativas. Muy profesionales y el ambiente es super comfortable."</blockquote>
-          <div class="testimonio-author">
-            <div class="testimonio-avatar">M</div>
-            <div>
-              <div class="name">María González</div>
-              <div class="verified">✓ Paciente verificada</div>
+      <div class="testimonios-carousel fade-in">
+        <div class="testimonios-track" id="testimonios-track">
+          <div class="testimonio-card">
+            <div class="testimonio-stars">★★★★★</div>
+            <blockquote>"Excelente atención. Me hicieron un blanqueamiento y los resultados superaron mis expectativas. Muy profesionales y el ambiente es super confortable."</blockquote>
+            <div class="testimonio-author">
+              <div class="testimonio-avatar">M</div>
+              <div>
+                <div class="name">María González</div>
+                <div class="verified">✓ Paciente verificada</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio-card">
+            <div class="testimonio-stars">★★★★★</div>
+            <blockquote>"Hace un año me colocaron implantes y quedé increíblemente satisfecho. El Dr. explicó cada paso con paciencia. Recomiendo esta clínica al 100%."</blockquote>
+            <div class="testimonio-author">
+              <div class="testimonio-avatar">C</div>
+              <div>
+                <div class="name">Carlos Martínez</div>
+                <div class="verified">✓ Paciente verificado</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio-card">
+            <div class="testimonio-stars">★★★★★</div>
+            <blockquote>"Llevé a mi hijo por primera vez y se sintió muy tranquilo. El trato con los niños es excelente. Ahora es nuestra clínica de cabecera para toda la familia."</blockquote>
+            <div class="testimonio-author">
+              <div class="testimonio-avatar">L</div>
+              <div>
+                <div class="name">Laura Fernández</div>
+                <div class="verified">✓ Paciente verificada</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio-card">
+            <div class="testimonio-stars">★★★★★</div>
+            <blockquote>"Me realizaron carillas de porcelana y el resultado es espectacular. Se nota la calidad del trabajo y la dedicación del equipo profesional."</blockquote>
+            <div class="testimonio-author">
+              <div class="testimonio-avatar">R</div>
+              <div>
+                <div class="name">Roberto Sánchez</div>
+                <div class="verified">✓ Paciente verificado</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio-card">
+            <div class="testimonio-stars">★★★★★</div>
+            <blockquote>"Después de años con miedo al dentista, encontré esta clínica. Ahora voy con tranquilidad. El equipo humano hace toda la diferencia."</blockquote>
+            <div class="testimonio-author">
+              <div class="testimonio-avatar">A</div>
+              <div>
+                <div class="name">Ana Martínez</div>
+                <div class="verified">✓ Paciente verificada</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="testimonio-card fade-in">
-          <div class="testimonio-stars">★★★★★</div>
-          <blockquote>"Hace un año me colocaron implantes y quedé increíblemente satisfecho. El Dr. explicó cada paso con paciencia. Recomiendo esta clínica al 100%."</blockquote>
-          <div class="testimonio-author">
-            <div class="testimonio-avatar">C</div>
-            <div>
-              <div class="name">Carlos Martínez</div>
-              <div class="verified">✓ Paciente verificado</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonio-card fade-in">
-          <div class="testimonio-stars">★★★★★</div>
-          <blockquote>"Llevé a mi hijo por primera vez y se sintió muy tranquilo. El trato con los niños es excelente. Ahora es nuestra clínica de cabecera para toda la familia."</blockquote>
-          <div class="testimonio-author">
-            <div class="testimonio-avatar">L</div>
-            <div>
-              <div class="name">Laura Fernández</div>
-              <div class="verified">✓ Paciente verificada</div>
-            </div>
-          </div>
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <div class="carousel-nav">
+          <button onclick="moveTestimonios(-1)" aria-label="Anterior">←</button>
+          <button onclick="moveTestimonios(1)" aria-label="Siguiente">→</button>
         </div>
       </div>
     </div>
@@ -308,6 +342,13 @@
             <li><a href="tel:+543791234567" data-telefono>+54 379 123-4567</a></li>
             <li><a href="mailto:hola@clinicadental.com.ar" data-email>hola@clinicadental.com.ar</a></li>
           </ul>
+          <div class="newsletter-form">
+            <p>Suscribite para recibir novedades y ofertas.</p>
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Tu email">
+              <button type="button">Suscribir</button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">

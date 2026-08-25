@@ -11,7 +11,6 @@
   <meta property="og:url" content="https://clinicadental.com/contacto.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -39,7 +38,7 @@
   <section class="section" style="padding-top:140px; padding-bottom:60px;">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="accent-line"></div>
+        <div class="accent-blob">📮</div>
         <h2>Contacto y <span class="highlight">Reservas</span></h2>
         <p>Agendá tu turno online o contactanos directamente. ¡Estamos para ayudarte!</p>
       </div>
@@ -50,51 +49,6 @@
   <section class="section" style="padding-top:0;">
     <div class="container">
       <div class="contacto-grid">
-
-        <!-- Contact Info -->
-        <div class="contacto-info fade-in">
-          <h3>Información de contacto</h3>
-          <p>Estamos para atenderte. No dudes en comunicarte por cualquiera de estos medios.</p>
-
-          <div class="info-cards">
-            <div class="info-card">
-              <div class="icon">📍</div>
-              <div class="text">
-                <h4>Dirección</h4>
-                <p>Calle Falsa 123, Ciudad</p>
-              </div>
-            </div>
-            <div class="info-card">
-              <div class="icon">📞</div>
-              <div class="text">
-                <h4>Teléfono</h4>
-                <p>+54 379 123-4567</p>
-              </div>
-            </div>
-            <div class="info-card">
-              <div class="icon">✉️</div>
-              <div class="text">
-                <h4>Email</h4>
-                <p>info@dentalflorentina.com</p>
-              </div>
-            </div>
-            <div class="info-card">
-              <div class="icon">🕐</div>
-              <div class="text">
-                <h4>Horarios</h4>
-                <p>Lunes a Viernes: 9:00 - 18:00<br>Sábados: 9:00 - 13:00</p>
-              </div>
-            </div>
-          </div>
-
-          <a href="https://wa.me/543791234567" class="btn btn-whatsapp mt-4" style="width:100%; text-align:center;" target="_blank" rel="noopener">Contactar por WhatsApp</a>
-
-          <div class="map-container mt-4">
-            <div style="width:100%; height:250px; background:var(--cream-dark); display:flex; align-items:center; justify-content:center; font-size:3rem;">
-              🗺️
-            </div>
-          </div>
-        </div>
 
         <!-- Contact Form -->
         <div class="form-card fade-in">
@@ -153,40 +107,80 @@
           </form>
         </div>
 
+        <!-- Contact Info Cards -->
+        <div class="fade-in">
+          <div class="contact-info-stack">
+            <div class="info-floating-card">
+              <div class="card-icon">📞</div>
+              <div class="card-text">
+                <h4>Teléfono</h4>
+                <p>+54 379 123-4567</p>
+              </div>
+            </div>
+            <div class="info-floating-card">
+              <div class="card-icon">✉️</div>
+              <div class="card-text">
+                <h4>Email</h4>
+                <p>info@dentalflorentina.com</p>
+              </div>
+            </div>
+            <div class="info-floating-card">
+              <div class="card-icon">📍</div>
+              <div class="card-text">
+                <h4>Dirección</h4>
+                <p>Calle Falsa 123, Ciudad</p>
+              </div>
+            </div>
+            <div class="info-floating-card">
+              <div class="card-icon">🕐</div>
+              <div class="card-text">
+                <h4>Horarios</h4>
+                <p>Lunes a Viernes: 9:00 - 18:00<br>Sábados: 9:00 - 13:00</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/543791234567" class="btn btn-whatsapp mt-4" style="width:100%; justify-content:center;" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+
+          <div class="map-container mt-4">
+            🗺️
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="section" style="background:var(--white);">
+  <section class="section faq-section">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="accent-line"></div>
+        <div class="accent-blob">❓</div>
         <h2>Preguntas <span class="highlight">Frecuentes</span></h2>
       </div>
 
-      <div style="max-width:800px; margin:0 auto;">
-        <div class="servicio-card fade-in" style="margin-bottom:16px;">
+      <div class="faq-list">
+        <div class="faq-item fade-in">
           <h3>¿Cómo puedo reservar un turno?</h3>
           <p>Podés reservar tu turno de tres formas: completando el formulario de contacto en esta página, llamándonos por teléfono o escribiéndonos por WhatsApp. Te confirmaremos la fecha y hora a la brevedad.</p>
         </div>
-        <div class="servicio-card fade-in" style="margin-bottom:16px;">
+        <div class="faq-item fade-in">
           <h3>¿Aceptan obras sociales?</h3>
           <p>Trabajamos con las principales obras sociales y prepagas. Consultanos para verificar cobertura específica de tu plan.</p>
         </div>
-        <div class="servicio-card fade-in" style="margin-bottom:16px;">
+        <div class="faq-item fade-in">
           <h3>¿Cuánto dura una consulta general?</h3>
           <p>Una consulta general tiene una duración aproximada de 30 a 45 minutos, incluyendo evaluación, diagnóstico y plan de tratamiento personalizado.</p>
         </div>
-        <div class="servicio-card fade-in" style="margin-bottom:16px;">
+        <div class="faq-item fade-in">
           <h3>¿Atienden urgencias dentales?</h3>
           <p>Sí, atendemos urgencias dentales durante nuestro horario de atención. Para emergencias fuera de horario, comunicate por WhatsApp y te orientaremos.</p>
         </div>
-        <div class="servicio-card fade-in" style="margin-bottom:16px;">
+        <div class="faq-item fade-in">
           <h3>¿La primera consulta tiene algún costo?</h3>
           <p>La primera consulta incluye evaluación completa, diagnóstico y presupuesto sin compromiso. Consultanos para información actualizada.</p>
         </div>
-        <div class="servicio-card fade-in">
+        <div class="faq-item fade-in">
           <h3>¿Qué debo llevar a mi primera consulta?</h3>
           <p>Traé tu documentación, obra social (si tenés) y si es posible, radiografías previas. No necesitas preparación especial.</p>
         </div>
