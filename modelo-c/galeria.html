@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Trabajos | Clínica Dental Familiar</title>
+  <meta name="description" content="Mirá nuestros trabajos dentales: antes y después, casos reales de limpieza, blanqueamiento, implantes, ortodoncia y más.">
+  <meta property="og:title" content="Galería de Trabajos | Clínica Dental Familiar">
+  <meta property="og:description" content="Antes y después de tratamientos dentales realizados por nuestro equipo profesional.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clinicadental.com/galeria.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-icon">🦷</span>
+        <span class="navbar__logo-text">Dental<span>Flor</span></span>
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="index.html" class="navbar__link">Inicio</a></li>
+        <li><a href="servicios.html" class="navbar__link">Servicios</a></li>
+        <li><a href="galeria.html" class="navbar__link active">Trabajos</a></li>
+        <li><a href="contacto.html" class="navbar__link navbar__link--cta">Reservar Turno</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title fade-in">Nuestros <span class="text-green">Trabajos</span></h1>
+      <p class="page-header__subtitle fade-in">Mirá los resultados de nuestros tratamientos. Cada sonrisa cuenta una historia de confianza y cuidado.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Filters -->
+  <section class="gallery">
+    <div class="container">
+      <div class="gallery__filters fade-in">
+        <button class="gallery__filter active" data-filter="all">Todos</button>
+        <button class="gallery__filter" data-filter="limpieza">Limpieza</button>
+        <button class="gallery__filter" data-filter="blanqueamiento">Blanqueamiento</button>
+        <button class="gallery__filter" data-filter="implantes">Implantes</button>
+        <button class="gallery__filter" data-filter="ortodoncia">Ortodoncia</button>
+        <button class="gallery__filter" data-filter="estetica">Estética</button>
+      </div>
+
+      <div class="gallery__grid">
+
+        <div class="gallery__item fade-in" data-category="limpieza">
+          <div class="gallery__image-placeholder">
+            <span>🪥</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Limpieza Profunda</h3>
+            <p class="gallery__desc">Eliminación completa de sarro y manchas. Encías más sanas en una sola sesión.</p>
+            <span class="gallery__tag">Limpieza</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="blanqueamiento">
+          <div class="gallery__image-placeholder">
+            <span>✨</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Blanqueamiento ZOOM</h3>
+            <p class="gallery__desc">Sonrisa 6 tonos más blanca en dos sesiones. Resultado natural y duradero.</p>
+            <span class="gallery__tag">Blanqueamiento</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="implantes">
+          <div class="gallery__image-placeholder">
+            <span>🦷</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Implante Unitario</h3>
+            <p class="gallery__desc">Reemplazo de diente anterior con implante y corona de porcelana.</p>
+            <span class="gallery__tag">Implantes</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="ortodoncia">
+          <div class="gallery__image-placeholder">
+            <span>👩‍⚕️</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Ortodoncia Invisible</h3>
+            <p class="gallery__desc">Alineación dental con alineadores transparentes. Sin brackets, sin compromisos.</p>
+            <span class="gallery__tag">Ortodoncia</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="estetica">
+          <div class="gallery__image-placeholder">
+            <span>💎</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Carillas de Porcelana</h3>
+            <p class="gallery__desc">Transformación total de la sonrisa con carillas ultra delgadas.</p>
+            <span class="gallery__tag">Estética</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="limpieza">
+          <div class="gallery__image-placeholder">
+            <span>🌿</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Tratamiento de Encías</h3>
+            <p class="gallery__desc">Gingivitis severa tratada con limpieza profunda y cuidados preventivos.</p>
+            <span class="gallery__tag">Limpieza</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="implantes">
+          <div class="gallery__image-placeholder">
+            <span>🏥</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Rehabilitación Completa</h3>
+            <p class="gallery__desc">Rehabilitación con 8 implantes y prótesis fija. Sonrisa renovada.</p>
+            <span class="gallery__tag">Implantes</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="estetica">
+          <div class="gallery__image-placeholder">
+            <span>🌸</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Diseño de Sonrisa</h3>
+            <p class="gallery__desc">Diseño personalizado con carillas y blanqueamiento para resultado armónico.</p>
+            <span class="gallery__tag">Estética</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="ortodoncia">
+          <div class="gallery__image-placeholder">
+            <span>😁</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Ortodoncia Adolescentes</h3>
+            <p class="gallery__desc">Corrección de apiñamiento con brackets cerámicos. Resultados en 18 meses.</p>
+            <span class="gallery__tag">Ortodoncia</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="blanqueamiento">
+          <div class="gallery__image-placeholder">
+            <span>🌞</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Blanqueamiento Envase</h3>
+            <p class="gallery__desc">Blanqueamiento casero supervisado con resultados progresivos y naturales.</p>
+            <span class="gallery__tag">Blanqueamiento</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="estetica">
+          <div class="gallery__image-placeholder">
+            <span>🎭</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Coronas de Zirconia</h3>
+            <p class="gallery__desc">Reemplazo de coronas metálicas por zirconia para un resultado más estético.</p>
+            <span class="gallery__tag">Estética</span>
+          </div>
+        </div>
+
+        <div class="gallery__item fade-in" data-category="limpieza">
+          <div class="gallery__image-placeholder">
+            <span>💪</span>
+            <p>Antes / Después</p>
+          </div>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Mantenimiento Periodontal</h3>
+            <p class="gallery__desc">Control de enfermedad periodontal con rutina de limpieza trimestral.</p>
+            <span class="gallery__tag">Limpieza</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta__container">
+      <div class="cta__content fade-in">
+        <h2 class="cta__title">¿Querés una sonrisa así?</h2>
+        <p class="cta__text">Agendá tu consulta gratuita y descubrí todos los tratamientos que tenemos para vos.</p>
+        <div class="cta__actions">
+          <a href="contacto.html" class="btn btn--white">Reservar Turno</a>
+          <a href="https://wa.me/543791234567" class="btn btn--whatsapp" target="_blank" rel="noopener">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <a href="index.html" class="footer__logo">
+          <span class="navbar__logo-icon">🦷</span>
+          <span class="navbar__logo-text">Dental<span>Flor</span></span>
+        </a>
+        <p class="footer__desc">Clínica dental familiar dedicada a brindar sonrisas saludables con calidez, profesionalismo y los más altos estándares de calidad.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Enlaces</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="galeria.html">Trabajos</a></li>
+          <li><a href="contacto.html">Reservar Turno</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Contacto</h4>
+        <ul class="footer__links">
+          <li>📍 Calle Falsa 123, Ciudad</li>
+          <li>📞 +54 379 123-4567</li>
+          <li>✉️ info@dentalflorentina.com</li>
+          <li>🕐 Lun-Vie: 9-18hs | Sáb: 9-13hs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 DentalFlor. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/543791234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    💬
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

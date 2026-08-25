@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Odonto Premium</title>
+  <meta name="description" content="Reservá tu turno en Odonto Premium. Formulario de contacto, ubicación y horarios de atención.">
+  <meta property="og:title" content="Contacto | Odonto Premium">
+  <meta property="og:description" content="Reservá tu turno en Odonto Premium. Formulario de contacto, ubicación y horarios de atención.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://odontopremium.com.ar/contacto.html">
+  <meta property="og:image" content="https://odontopremium.com.ar/assets/og-image.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <span class="navbar__logo">ODONTO</span><span class="navbar__logo--gold">PREMIUM</span>
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Trabajos</a></li>
+        <li><a href="contacto.html" class="btn btn--gold btn--nav active">Reservar Turno</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <span class="page-header__tag fade-in">Contacto</span>
+      <h1 class="page-header__title fade-in">Reservá tu <span class="text-gold">Turno</span></h1>
+      <p class="page-header__desc fade-in">Completá el formulario y nos pondremos en contacto a la brevedad para confirmar tu cita.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section contact">
+    <div class="container">
+      <div class="contact__grid">
+
+        <!-- Form -->
+        <div class="contact__form-wrapper fade-in">
+          <form class="contact__form" id="contactForm" action="/api/contacto" method="POST">
+            <div class="form__group">
+              <label class="form__label" for="nombre">Nombre Completo *</label>
+              <input class="form__input" type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="email">Email *</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="telefono">Teléfono *</label>
+                <input class="form__input" type="tel" id="telefono" name="telefono" placeholder="+54 379 123-4567" required>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="servicio">Servicio de Interés *</label>
+              <select class="form__input form__select" id="servicio" name="servicio" required>
+                <option value="" disabled selected>Seleccioná un servicio</option>
+                <option value="blanqueamiento">Blanqueamiento Dental</option>
+                <option value="implantes">Implantes Dentales</option>
+                <option value="carillas">Carillas Dentales</option>
+                <option value="ortodoncia">Ortodoncia Invisible</option>
+                <option value="estetica">Estética Dental</option>
+                <option value="prevencion">PrevenCIÓN Integral</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="fecha">Fecha Preferida</label>
+                <input class="form__input" type="date" id="fecha" name="fecha">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="horario">Horario Preferido</label>
+                <select class="form__input form__select" id="horario" name="horario">
+                  <option value="" disabled selected>Seleccioná un horario</option>
+                  <option value="manana">Mañana (9:00 - 12:00)</option>
+                  <option value="tarde">Tarde (12:00 - 18:00)</option>
+                  <option value="sin-preferencia">Sin preferencia</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="mensaje">Mensaje</label>
+              <textarea class="form__input form__textarea" id="mensaje" name="mensaje" placeholder="Contanos brevemente tu consulta o situación..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold btn--lg btn--full" id="submitBtn">
+              <span class="btn__text">Enviar Solicitud</span>
+              <span class="btn__loading" style="display:none;">Enviando...</span>
+            </button>
+            <div class="form__message" id="formMessage"></div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact__info fade-in">
+          <div class="contact__info-card">
+            <h3 class="contact__info-title">Información de Contacto</h3>
+            <div class="contact__info-items">
+              <div class="contact__info-item">
+                <span class="contact__info-icon">📍</span>
+                <div>
+                  <span class="contact__info-label">Dirección</span>
+                  <span class="contact__info-value">Av. Principal 1234, Corrientes</span>
+                </div>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-icon">📞</span>
+                <div>
+                  <span class="contact__info-label">Teléfono</span>
+                  <span class="contact__info-value">+54 379 123-4567</span>
+                </div>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-icon">✉️</span>
+                <div>
+                  <span class="contact__info-label">Email</span>
+                  <span class="contact__info-value">info@odontopremium.com.ar</span>
+                </div>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-icon">🕐</span>
+                <div>
+                  <span class="contact__info-label">Horarios</span>
+                  <span class="contact__info-value">Lun - Vie: 9:00 - 18:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__info-card">
+            <h3 class="contact__info-title">Atención Directa</h3>
+            <p class="contact__info-text">¿Necesitás una respuesta rápida? Contactanos directamente por WhatsApp.</p>
+            <a href="https://wa.me/543791234567" class="btn btn--gold btn--lg btn--full" target="_blank" rel="noopener">
+              <span>💬</span> WhatsApp
+            </a>
+          </div>
+
+          <div class="contact__info-card">
+            <h3 class="contact__info-title">Ubicación</h3>
+            <div class="contact__map-placeholder">
+              <span>🗺️</span>
+              <p>Mapa de ubicación</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <h2 class="cta__title">¿Preferís llamar <span class="text-gold">directamente</span>?</h2>
+        <p class="cta__text">Nuestro equipo está disponible para responder todas tus consultas.</p>
+        <div class="cta__actions">
+          <a href="tel:+543791234567" class="btn btn--gold btn--lg">📞 Llamar Ahora</a>
+          <a href="https://wa.me/543791234567" target="_blank" rel="noopener" class="btn btn--outline btn--lg">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <a href="index.html" class="footer__brand">
+            <span class="navbar__logo">ODONTO</span><span class="navbar__logo--gold">PREMIUM</span>
+          </a>
+          <p class="footer__desc">Odontología de excelencia con tecnología de vanguardia y atención personalizada.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Navegación</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Trabajos</a></li>
+            <li><a href="contacto.html">Reservar Turno</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Contacto</h4>
+          <ul class="footer__links">
+            <li><span>📍</span> Av. Principal 1234, Corrientes</li>
+            <li><span>📞</span> +54 379 123-4567</li>
+            <li><span>✉️</span> info@odontopremium.com.ar</li>
+            <li><span>🕐</span> Lun-Vie: 9:00 - 18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Odonto Premium. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/543791234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

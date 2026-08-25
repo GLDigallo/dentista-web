@@ -1,0 +1,87 @@
+{
+  "dentista": {
+    "nombre": "Dra. María López",
+    "especialidad": "Odontología Estética y Restauradora",
+    "titulo": "Tu sonrisa es nuestra pasión",
+    "subtitulo": "Odontología de vanguardia con trato cercano y personalizado. Más de 15 años cuidando la salud bucal de tu familia.",
+    "telefono": "+54 379 123-4567",
+    "whatsapp": "543791234567",
+    "email": "consulta@drlopez-odontologia.com",
+    "direccion": "Av. San Martín 1234, Piso 2, Consultorio 5",
+    "ciudad": "Corrientes",
+    "provincia": "Corrientes",
+    "pais": "Argentina",
+    "horarios": {
+      "lunes_viernes": "8:00 - 18:00",
+      "sabados": "8:00 - 13:00"
+    },
+    "googleMaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.123456789!2d-58.99!3d-27.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDI4JzEyLjAiUyA1OMKwNTknMjQuMCJX!5e0!3m2!1ses!2sar!4v1234567890"
+  },
+  "servicios": [
+    {
+      "icono": "🦷",
+      "titulo": "Blanqueamiento Dental",
+      "descripcion": "Recupera el brillo natural de tu sonrisa con nuestro blanqueamiento profesional de última generación. Resultados visibles desde la primera sesión.",
+      "precio": "Desde $45.000"
+    },
+    {
+      "icono": "✨",
+      "titulo": "Carillas Dentales",
+      "descripcion": "Sonrisa perfecta con carillas de porcelana o resina. Diseño personalizado según tu rostro para un resultado natural y duradero.",
+      "precio": "Desde $80.000"
+    },
+    {
+      "icono": "🔧",
+      "titulo": "Implantes Dentales",
+      "descripcion": "Recupera tu sonrisa con implantes de titanio de última generación. Cirugía mínimamente invasiva con rápida recuperación.",
+      "precio": "Consulta sin compromiso"
+    },
+    {
+      "icono": "🪥",
+      "titulo": "Limpieza Profesional",
+      "descripcion": "Eliminación completa de sarro y manchas. Prevención de enfermedades encías y mantenimiento de tu salud bucal.",
+      "precio": "Desde $15.000"
+    },
+    {
+      "icono": "😁",
+      "titulo": "Ortodoncia",
+      "descripcion": "Alineadores invisibles y brackets estéticos para enderezar tus dientes sin comprometer tu comodidad ni tu imagen.",
+      "precio": "Consulta ortodóncica incluida"
+    },
+    {
+      "icono": "🏥",
+      "titulo": "Odontología General",
+      "descripcion": "Consultas, empastes, extracciones y tratamientos de conducto. Cuidamos tu salud bucal con los más altos estándares.",
+      "precio": "Primera consulta gratuita"
+    }
+  ],
+  "testimonios": [
+    {
+      "nombre": "Ana Martínez",
+      "texto": "Increíble experiencia. La Dra. López me hizo un blanqueamiento y quedé fascinada con el resultado. Muy profesional y amable.",
+      "estrellas": 5
+    },
+    {
+      "nombre": "Carlos Gutiérrez",
+      "texto": "Tenía mucho miedo al dentista, pero el trato de todo el equipo me hizo sentir en confianza. Ahora voy cada 6 meses sin falta.",
+      "estrellas": 5
+    },
+    {
+      "nombre": "Laura Fernández",
+      "texto": "Me pusieron implantes y no sentí dolor. El seguimiento post-operatorio es impecable. 100% recomendable.",
+      "estrellas": 5
+    }
+  ],
+  "galeria": {
+    "titulo": "Nuestro Trabajo Habla por Nosotros",
+    "subtitulo": "Resultados reales de pacientes reales. Cada sonrisa es un caso único tratado con dedicación y excelencia.",
+    "categorias": ["Blanqueamiento", "Carillas", "Implantes", "Ortodoncia"]
+  },
+  "seo": {
+    "titulo": "Dra. María López | Odontóloga en Corrientes | Odontología Estética",
+    "descripcion": "Dra. María López, odontóloga en Corrientes. Blanqueamiento, carillas, implantes dentales y más. Primera consulta gratuita. Llámanos al +54 379 123-4567",
+    "keywords": "dentista corrientes, odontologo corrientes, blanqueamiento dental, carillas dentales, implantes dentales, odontologia estetica corrientes",
+    "url": "https://drlopez-odontologia.com",
+    "imagen": "/images/og-image.jpg"
+  }
+}

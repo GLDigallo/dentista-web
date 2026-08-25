@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Reserva de Turnos | Clínica Dental Familiar</title>
+  <meta name="description" content="Reservá tu turno online o contactanos por WhatsApp. Estamos en Calle Falsa 123, Ciudad. Lun-Vie 9-18hs, Sáb 9-13hs.">
+  <meta property="og:title" content="Contacto y Reserva de Turnos | Clínica Dental Familiar">
+  <meta property="og:description" content="Reservá tu turno online o contactanos. Clínica dental familiar con atención cálida y profesional.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clinicadental.com/contacto.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-icon">🦷</span>
+        <span class="navbar__logo-text">Dental<span>Flor</span></span>
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="index.html" class="navbar__link">Inicio</a></li>
+        <li><a href="servicios.html" class="navbar__link">Servicios</a></li>
+        <li><a href="galeria.html" class="navbar__link">Trabajos</a></li>
+        <li><a href="contacto.html" class="navbar__link navbar__link--cta active">Reservar Turno</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title fade-in">Contacto y <span class="text-green">Reservas</span></h1>
+      <p class="page-header__subtitle fade-in">Agendá tu turno online o contactanos directamente. ¡Estamos para ayudarte!</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container contact__container">
+
+      <!-- Form -->
+      <div class="contact__form-wrapper fade-in">
+        <h2 class="contact__form-title">Reservá tu turno</h2>
+        <p class="contact__form-desc">Completá el formulario y nos pondremos en contacto a la brevedad para confirmar tu cita.</p>
+        <form class="contact-form" id="contactForm" action="/api/contacto" method="POST">
+          <div class="contact-form__row">
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="nombre">Nombre completo *</label>
+              <input class="contact-form__input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="telefono">Teléfono *</label>
+              <input class="contact-form__input" type="tel" id="telefono" name="telefono" placeholder="+54 379 123-4567" required>
+            </div>
+          </div>
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="email">Email</label>
+            <input class="contact-form__input" type="email" id="email" name="email" placeholder="tu@email.com">
+          </div>
+          <div class="contact-form__row">
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="servicio">Servicio de interés *</label>
+              <select class="contact-form__select" id="servicio" name="servicio" required>
+                <option value="" disabled selected>Seleccioná un servicio</option>
+                <option value="limpieza">Limpieza dental</option>
+                <option value="blanqueamiento">Blanqueamiento</option>
+                <option value="implantes">Implantes</option>
+                <option value="ortodoncia">Ortodoncia</option>
+                <option value="endodoncia">Endodoncia</option>
+                <option value="infantil">Odontología infantil</option>
+                <option value="rehabilitacion">Rehabilitación</option>
+                <option value="consulta-general">Consulta general</option>
+              </select>
+            </div>
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="fecha">Fecha preferida</label>
+              <input class="contact-form__input" type="date" id="fecha" name="fecha">
+            </div>
+          </div>
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="mensaje">Mensaje o consulta</label>
+            <textarea class="contact-form__textarea" id="mensaje" name="mensaje" rows="4" placeholder="Contanos brevemente tu consulta o indicá horarios preferidos..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar solicitud de turno</button>
+          <p class="contact-form__note">Los campos marcados con * son obligatorios.</p>
+        </form>
+        <div class="contact-form__success" id="formSuccess" style="display:none;">
+          <span class="contact-form__success-icon">✅</span>
+          <h3>¡Solicitud enviada con éxito!</h3>
+          <p>Nos pondremos en contacto a la brevedad para confirmar tu turno.</p>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact__info fade-in">
+        <h2 class="contact__info-title">Información de contacto</h2>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">📍</div>
+          <div>
+            <h3 class="contact-info-card__title">Dirección</h3>
+            <p class="contact-info-card__text">Calle Falsa 123<br>Ciudad, Provincia</p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">📞</div>
+          <div>
+            <h3 class="contact-info-card__title">Teléfono</h3>
+            <p class="contact-info-card__text">+54 379 123-4567</p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">✉️</div>
+          <div>
+            <h3 class="contact-info-card__title">Email</h3>
+            <p class="contact-info-card__text">info@dentalflorentina.com</p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card__icon">🕐</div>
+          <div>
+            <h3 class="contact-info-card__title">Horarios</h3>
+            <p class="contact-info-card__text">Lunes a Viernes: 9:00 - 18:00<br>Sábados: 9:00 - 13:00</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/543791234567" class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">💬 Contactar por WhatsApp</a>
+
+        <!-- Map Placeholder -->
+        <div class="contact__map">
+          <div class="contact__map-placeholder">
+            <span>🗺️</span>
+            <p>Mapa de ubicación</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title fade-in">Preguntas <span class="text-green">Frecuentes</span></h2>
+      <div class="faq__grid">
+
+        <div class="faq__item fade-in">
+          <h3 class="faq__question">¿Cómo puedo reservar un turno?</h3>
+          <p class="faq__answer">Podés reservar tu turno de tres formas: completando el formulario de contacto en esta página, llamándonos por teléfono o escribiéndonos por WhatsApp. Te confirmaremos la fecha y hora a la brevedad.</p>
+        </div>
+
+        <div class="faq__item fade-in">
+          <h3 class="faq__question">¿Aceptan obras sociales?</h3>
+          <p class="faq__answer">Trabajamos con las principales obras sociales y prepagas. Consultanos para verificar cobertura específica de tu plan.</p>
+        </div>
+
+        <div class="faq__item fade-in">
+          <h3 class="faq__question">¿Cuánto dura una consulta general?</h3>
+          <p class="faq__answer">Una consulta general tiene una duración aproximada de 30 a 45 minutos, incluyendo evaluación, diagnóstico y plan de tratamiento personalizado.</p>
+        </div>
+
+        <div class="faq__item fade-in">
+          <h3 class="faq__question">¿Atienden urgencias dentales?</h3>
+          <p class="faq__answer">Sí, atendemos urgencias dentales durante nuestro horario de atención. Para emergencias fuera de horario, comunicate por WhatsApp y te orientaremos.</p>
+        </div>
+
+        <div class="faq__item fade-in">
+          <h3 class="faq__question">¿La primera consulta tiene algún costo?</h3>
+          <p class="faq__answer">La primera consulta incluye evaluación completa, diagnóstico y presupuesto sin compromiso. Consultanos para información actualizada.</p>
+        </div>
+
+        <div class="faq__item fade-in">
+          <h3 class="faq__question">¿Qué debo llevar a mi primera consulta?</h3>
+          <p class="faq__answer">Traé tu documentación, obra social (si tenés) y si es posible, radiografías previas. No necesitas preparación especial.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <a href="index.html" class="footer__logo">
+          <span class="navbar__logo-icon">🦷</span>
+          <span class="navbar__logo-text">Dental<span>Flor</span></span>
+        </a>
+        <p class="footer__desc">Clínica dental familiar dedicada a brindar sonrisas saludables con calidez, profesionalismo y los más altos estándares de calidad.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Enlaces</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="galeria.html">Trabajos</a></li>
+          <li><a href="contacto.html">Reservar Turno</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Contacto</h4>
+        <ul class="footer__links">
+          <li>📍 Calle Falsa 123, Ciudad</li>
+          <li>📞 +54 379 123-4567</li>
+          <li>✉️ info@dentalflorentina.com</li>
+          <li>🕐 Lun-Vie: 9-18hs | Sáb: 9-13hs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 DentalFlor. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/543791234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    💬
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

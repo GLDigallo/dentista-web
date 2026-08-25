@@ -1,0 +1,15 @@
+{
+  "name": "dentista-web",
+  "version": "1.0.0",
+  "description": "Web profesional para dentista - SEO optimizada",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "dotenv": "^16.3.1"
+  }
+}
