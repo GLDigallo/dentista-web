@@ -1,12 +1,12 @@
 {
   "dentista": {
-    "nombre": "Dra. María López",
+    "nombre": "Dra. Laura González",
     "especialidad": "Odontología Estética y Restauradora",
     "titulo": "Tu sonrisa es nuestra pasión",
     "subtitulo": "Odontología de vanguardia con trato cercano y personalizado. Más de 15 años cuidando la salud bucal de tu familia.",
     "telefono": "+54 379 123-4567",
     "whatsapp": "543791234567",
-    "email": "consulta@drlopez-odontologia.com",
+    "email": "consulta@dralauragonzalez.com",
     "direccion": "Av. San Martín 1234, Piso 2, Consultorio 5",
     "ciudad": "Corrientes",
     "provincia": "Corrientes",
@@ -78,10 +78,10 @@
     "categorias": ["Blanqueamiento", "Carillas", "Implantes", "Ortodoncia"]
   },
   "seo": {
-    "titulo": "Dra. María López | Odontóloga en Corrientes | Odontología Estética",
-    "descripcion": "Dra. María López, odontóloga en Corrientes. Blanqueamiento, carillas, implantes dentales y más. Primera consulta gratuita. Llámanos al +54 379 123-4567",
+    "titulo": "Dra. Laura González | Odontóloga en Corrientes | Odontología Estética",
+    "descripcion": "Dra. Laura González, odontóloga en Corrientes. Blanqueamiento, carillas, implantes dentales y más. Primera consulta gratuita. Llámanos al +54 379 123-4567",
     "keywords": "dentista corrientes, odontologo corrientes, blanqueamiento dental, carillas dentales, implantes dentales, odontologia estetica corrientes",
-    "url": "https://drlopez-odontologia.com",
+    "url": "https://dralauragonzalez.com",
     "imagen": "/images/og-image.jpg"
   }
 }
